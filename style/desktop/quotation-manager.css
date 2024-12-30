@@ -1,0 +1,105 @@
+/*
+    File: quotation-manager.css
+    Author: Yash Balotiya
+    Description: This file contains stylling part of Quotation Management Page
+    Created on: 27/12/2024
+    Last Modified: 27/12/2024
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    /* width: 50%; */
+}
+
+table {
+    border-collapse: collapse;
+    /* border: 2px solid black; */
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 4px;
+    text-align: center;
+}
+
+.th1 {
+    width: 130px;
+}
+
+.th2 {
+    width: 20px;
+}
+
+.th3 {
+    width: 100px;
+}
+
+.thick-border {
+    border: 2px solid black;
+}
+
+.no-border, .no-border td {
+    border: none;
+    text-align: right;
+}
+
+.right-align {
+    text-align: right;
+    font-weight: bold;
+}
+
+.left-thick-border {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+#discount-td {
+    width: 50px;
+    display: flex;
+    border: none;
+}
+
+input {
+    width: 100%;
+    border: none;
+    text-align: center;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#djg-logo-1 {
+    width: 50%;
+}
+
+.black-bg {
+    background-color: black;
+}
+
+#dj-ganesh-h1 {
+    color: gray;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+
+}
+
+#sign-img {
+    width: 100px;
+}
