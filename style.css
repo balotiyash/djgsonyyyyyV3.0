@@ -313,3 +313,91 @@ main {
 }
 
 /* Section4 */
+#child-10 {
+	height: 75vh;
+	display: flex;
+	justify-content: space-between;
+	/* margin: 20px 0; */
+}
+
+.child-11 {
+	height: 100%;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.child-11 div {
+	height: 200%;
+	display: flex;
+	justify-content: space-between;
+}
+
+#frame-1 {
+	width: 47%;
+	/* height: 150%; */
+}
+
+.iframe-2 {
+	height: 37vh;
+}
+
+#child-12 {
+	display: flex;
+	/* flex-direction: column; */
+	justify-content: space-between;
+	align-items: center;
+}
+
+/* Sec4 */
+#sec-4 {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-top: 200px;
+	background-color: black;
+	padding: 50px;
+	color: white;
+}
+
+#divider {
+	width: 100%;
+	height: 1px;
+	background-color: gray;
+	border: 1px solid gray;
+	border-radius: 2px;
+	margin: 50px 0;
+}
+
+#djg-logo-1 {
+	width: 50%;
+	margin: auto;
+}
+
+#child-13 {
+	display: flex;
+	justify-content: space-between;
+}
+
+#child-14 {
+	display: flex;
+	justify-content: space-between;
+}
+
+.child-15 {
+	display: flex;
+	flex-direction: column;
+}
+
+.child-15 a {
+	color: white;
+	text-decoration: none;
+}
+
+.child-16 {
+	width: 30%;
+	display: flex;
+	justify-content: space-between;
+	/* flex-direction: column; */
+}
