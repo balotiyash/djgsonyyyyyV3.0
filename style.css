@@ -3,7 +3,7 @@
     Author: Yash Balotiya
     Description: This file contains styling part of Home page.
     Created on: 30/12/2024
-    Last Modified: 30/12/2024
+    Last Modified: 31/12/2024
 */
 
 * {
@@ -28,14 +28,13 @@ main {
     align-items: center;
 }
 
+/* Section 1 */
 #sec-1 {
     width: 75%;
     padding-top: 5%;
-    /* display: flex; */
-    /* justify-items: flex-end; */
 }
 
-#child-1 {
+#hero-img-div {
     display: flex;
     justify-content: end;
     z-index: 100;
@@ -54,6 +53,11 @@ main {
 #child-3 {
     display: flex;
     width: 92%;
+}
+
+#ganesh-name-1 {
+	font-size: large;
+	color: #ff0150;
 }
 
 #dj-bg-1 {
@@ -86,7 +90,7 @@ main {
   font-family: poppins;
 } */
 
-.sec2 > #sec-2 {
+#sec-2 > #professional-h1 {
   animation: revealing;
   animation-timeline: view(block);
   animation-range: cover 0% cover 50%;
@@ -154,6 +158,14 @@ main {
     display: flex;
     flex-direction: column;
     margin-top: 200px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+#sec-3.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 #child-7 {
@@ -165,13 +177,69 @@ main {
 .child-8 {
     display: flex;
     flex-direction: column;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.child-8.visible {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 .child-8 img {
     width: 17vw;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
+.child-8.visible img {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.child-8 h1 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.child-8.visible h1 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.child-8:nth-child(1) {
+    transition-delay: 0.2s;
+}
+
+.child-8:nth-child(2) {
+    transition-delay: 0.4s;
+}
+
+.child-8:nth-child(3) {
+    transition-delay: 0.6s;
+}
+
+.child-8:nth-child(4) {
+    transition-delay: 0.8s;
+}
+
+
 /* section4 */
+#sec-5 {
+	width: 75vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+}
+
+.vlog-header {
+	font-size: 3vw;
+	font-weight: bold;
+}
+
 #child-7 {
     display: flex;
 }
@@ -313,14 +381,14 @@ main {
 }
 
 /* Section4 */
-#child-10 {
+#hero-img-div0 {
 	height: 75vh;
 	display: flex;
 	justify-content: space-between;
 	/* margin: 20px 0; */
 }
 
-.child-11 {
+.hero-img-div1 {
 	height: 100%;
 	width: 50%;
 	display: flex;
@@ -328,7 +396,7 @@ main {
 	justify-content: space-between;
 }
 
-.child-11 div {
+.hero-img-div1 div {
 	height: 200%;
 	display: flex;
 	justify-content: space-between;
@@ -343,7 +411,7 @@ main {
 	height: 37vh;
 }
 
-#child-12 {
+#hero-img-div2 {
 	display: flex;
 	/* flex-direction: column; */
 	justify-content: space-between;
@@ -375,27 +443,27 @@ main {
 	margin: auto;
 }
 
-#child-13 {
+#hero-img-div3 {
 	display: flex;
 	justify-content: space-between;
 }
 
-#child-14 {
+#hero-img-div4 {
 	display: flex;
 	justify-content: space-between;
 }
 
-.child-15 {
+.hero-img-div5 {
 	display: flex;
 	flex-direction: column;
 }
 
-.child-15 a {
+.hero-img-div5 a {
 	color: white;
 	text-decoration: none;
 }
 
-.child-16 {
+.hero-img-div6 {
 	width: 30%;
 	display: flex;
 	justify-content: space-between;
