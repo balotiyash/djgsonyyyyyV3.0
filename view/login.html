@@ -1,0 +1,86 @@
+<!-- 
+    File: view/login.html
+    Author: Yash Balotiya
+    Description: This file contains all the HTML5 code of the Login Page.
+    Created on: 01/01/2025
+    Last Modified: 01/01/2025
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Tab Details -->
+    <title>Admin Login</title>
+    <link rel="shortcut icon" type="x-icon" href="../asset/svg/user-solid-svg.svg">
+
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="../style/desktop/login.css">
+</head>
+
+<body>
+    <!-- Header Image -->
+    <img src="../asset/image/djg-logo-1.png" alt="DJLogo" id="immg">
+
+    <!-- Login Form Div -->
+    <div id="divv">
+        <div class="box">
+            <form>
+                <!-- DJGSONYYYYY Logo -->
+                <img src="../asset/image/djg-logo-4.png" alt="DJLogo" id="immg2">
+                
+                <h2>Sign in</h2>
+
+                <!-- ID -->
+                <div class="inputBox">
+                    <input type="text" required="required" id="unameTxt" autocomplete="off">
+                    <span>Username</span>
+                    <i></i>
+                </div>
+
+                <!-- Password -->
+                <div class="inputBox">
+                    <input type="password" required="required" id="passTxt" autocomplete="off">
+                    <span>Password</span>
+                    <i></i>
+                </div>
+
+                <!-- Login Button -->
+                <input type="button" value="Login" onclick="validateLogin()">
+            </form>
+        </div>
+    </div>
+
+    <!-- Script -->
+    <script src="../controller/navbar.js"></script>
+    <script>
+        // Function to reverse the process
+        function j10(k11,l12){k11=k11.split('').reverse().join('');let m13='';let n14=0;while(n14<k11.length){let o15=k11.charCodeAt(n14);if (o15>=65&&o15<=90){m13+=String.fromCharCode(((o15-65-l12+26)%26)+65);n14++;}else if(o15>=97&&o15<=122){m13+=String.fromCharCode(((o15-97-l12+26)%26)+97);n14++;}else{m13+=k11[n14];n14++;}if(n14<k11.length){n14++;}}return m13;}
+
+        // Function to Validate Login
+        function validateLogin() {
+            window.localStorage.setItem('isLoggedIn', "false");
+
+            const username = document.getElementById('unameTxt').value.toLowerCase();
+            const password = document.getElementById('passTxt').value;
+
+            let uname = "sxMgWhR.xdrb+l8daphrFv9@1oKdWzFlZu8dCqbxAv?.WkBv)h4qqd_j";
+            let pass = ".@Lbxb3bfb$bGqWr%V#JGMbGT@>F>3RE$27D%1";
+
+            uname = j10(uname, 3);
+            pass = j10(pass, 3);
+
+            if (username === uname && password === pass) {
+                window.localStorage.setItem('isLoggedIn', "true");
+                window.location.href = './quotation-manager.html';
+            } else {
+                alert('Invalid Username or Password');
+            }
+        }
+    </script>
+</body>
+
+</html>
