@@ -1,9 +1,9 @@
 /*
     File: style.css
     Author: Yash Balotiya
-    Description: This file contains styling part of Home page.
+    Description: This file contains styling part of Home page - Section 1 & 2, Hero Intro and About Me.
     Created on: 30/12/2024
-    Last Modified: 31/12/2024
+    Last Modified: 01/01/2025
 */
 
 * {
@@ -28,29 +28,36 @@ main {
     align-items: center;
 }
 
-/* Section 1 */
+/* Section 1: Intro */
 #sec-1 {
     width: 75%;
     padding-top: 5%;
 }
 
+/* Hero Image */
 #hero-img-div {
     display: flex;
     justify-content: end;
     z-index: 100;
 }
 
-#child-2, #child-4 {
+#hero-img {
+    width: 40vh;
+}
+
+/* Main Content */
+#main-content-div, #welcome-text-div {
     display: flex;
     flex-direction: column;
 }
 
-#child-2 {
+#main-content-div {
     position: relative;
     top: -40%;
 }
 
-#child-3 {
+/* Welcome Text */
+#welcome-div {
     display: flex;
     width: 92%;
 }
@@ -58,10 +65,6 @@ main {
 #ganesh-name-1 {
 	font-size: large;
 	color: #ff0150;
-}
-
-#dj-bg-1 {
-    width: 40vh;
 }
 
 #dj-name-1, #dj-name-2, #ganesh-span {
@@ -77,42 +80,8 @@ main {
     color: white;
 }
 
-/* Section2 */
-/* .sec2 {
-  width: 100%;
-  height: 100vh;
-  background-color: white;
-  color: black;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: poppins;
-} */
-
-#sec-2 > #professional-h1 {
-  animation: revealing;
-  animation-timeline: view(block);
-  animation-range: cover 0% cover 50%;
-  margin: 0px;
-}
-
-@keyframes revealing {
-  from {
-    color: gray;
-    margin-left: 100vw;
-    filter: blur(50px);
-    opacity: 0.5;
-  }
-  to {
-    margin: 0px;
-    filter: blur(0px);
-    opacity: 1;
-  }
-}
-
+/* Section 2: About Me */
 #sec-2 {
-    /* width: 100%; */
     width: 75vw;
     background-color: #1e1e1e;
     color: white;
@@ -122,25 +91,9 @@ main {
     border-radius: 20px;
 }
 
-#child-5 {
-    display: flex;
-    justify-content: space-between;
-}
-
-#djg-logo-4 {
-    width: 20vw;
-    height: 20vw;
-}
-
-#child-6 {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    margin: 0 20px;
-}
-
-#ganesh-1 {
-    width: 20vw;
+/* About Headers */
+#about-h3 {
+    color: lightgray;
 }
 
 #professional-h1 {
@@ -148,324 +101,50 @@ main {
     font-weight: bolder;
 }
 
-#about-h3 {
-    color: lightgray;
+/* Professional Text Animation */
+#sec-2 > #professional-h1 {
+	animation: revealing;
+	animation-timeline: view(block);
+	animation-range: cover 0% cover 50%;
+	margin: 0px;
+}
+  
+@keyframes revealing {
+	from {
+	  color: gray;
+	  margin-left: 100vw;
+	  filter: blur(50px);
+	  opacity: 0.5;
+	}
+
+	to {
+	  margin: 0px;
+	  filter: blur(0px);
+	  opacity: 1;
+	}
 }
 
-/* Section3 */
-#sec-3 {
-    width: 75vw;
-    display: flex;
-    flex-direction: column;
-    margin-top: 200px;
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-}
-
-#sec-3.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-#child-7 {
+/* About Me Area */
+#about-content-div {
     display: flex;
     justify-content: space-between;
-    margin: 20px 0;
 }
 
-.child-8 {
-    display: flex;
+/* Left Image */
+#djg-logo-4 {
+    width: 20vw;
+    height: 20vw;
+}
+
+/* Middle Text */
+#about-me-div {
+	display: flex;
     flex-direction: column;
-    opacity: 0;
-    transform: translateY(30px);
-    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+    justify-content: space-between;
+    margin: 0 20px;
 }
 
-.child-8.visible {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.child-8 img {
-    width: 17vw;
-    opacity: 0;
-    transform: scale(0.8);
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-}
-
-.child-8.visible img {
-    opacity: 1;
-    transform: scale(1);
-}
-
-.child-8 h1 {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-}
-
-.child-8.visible h1 {
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.child-8:nth-child(1) {
-    transition-delay: 0.2s;
-}
-
-.child-8:nth-child(2) {
-    transition-delay: 0.4s;
-}
-
-.child-8:nth-child(3) {
-    transition-delay: 0.6s;
-}
-
-.child-8:nth-child(4) {
-    transition-delay: 0.8s;
-}
-
-
-/* section4 */
-#sec-5 {
-	width: 75vw;
-    display: flex;
-    flex-direction: column;
-    margin-top: 200px;
-}
-
-.vlog-header {
-	font-size: 3vw;
-	font-weight: bold;
-}
-
-#child-7 {
-    display: flex;
-}
-
-#child-9 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.checked {
-    color: orange;
-    font-size: 2vw;
-    margin: 20px 0;
-}
-
-.testimonial {
-	width: 500px;
-	max-width: 100%;
-	background: #ffca52;
-	padding: 4em 3em;
-	display: flex;
-	align-items: flex-end;
-	position: relative;
-	box-shadow: 0 2px 2px hsl(0deg 0% 0%/.075), 0 3px 3px hsl(0deg 0% 0%/.075), 0 5px 5px hsl(0deg 0% 0%/.075), 0 9px 9px hsl(0deg 0% 0%/.075), 0 17px 17px hsl(0deg 0% 0%/.075);
-	position: relative;
-	&:after {
-		content: "";
-		border: 8px solid navy;
-		border-radius: 50px;
-		width: 85%;
-		height: 120%;
-		position: absolute;
-		z-index: -1;
-		left: 1.5em;
-		top: -2em;
-	}
-	&:before {
-		content: "";
-		position: absolute;
-		bottom: -6.2em;
-		left: 5em;
-		z-index: 1;		
-		width: 0;
-		height: 0;
-		border-style: solid;
-		border-width: 70px 100px 0 0;
-		border-color: navy transparent transparent transparent;
-	}
-	.quote {
-		position: absolute;
-		font-size: 3em;
-		width: 40px;
-		height: 40px;
-		background: navy;
-		color: #fff;
-		text-align: center;
-		line-height: 1.25;
-		&.open {
-			top: 0;
-			left: 0;
-		}
-		&.close {
-			bottom: 0;
-			right: 0;
-		}
-	}
-	p {
-		width: 60%;
-		display: inline-block;
-		font-weight: bold;
-		font-size: 1.25em;
-	}
-	.source {
-		width: 40%;
-		height: 100%;
-		position: relative;		
-		span {			
-			display: inline-block;
-			font-weight: bold;
-			font-size: 1.15em;
-			position: relative;
-			margin-left: 1rem;
-			text-align: right;			
-			&:before {
-				content: "\2014";
-				display: inline;
-				margin-right: 5px;
-			}
-		}		
-	}
-	.image {
-		transform: rotate(-5deg);
-		position: absolute;
-		top: 0.5em;
-		right: 1.5em;
-		img {
-			border: 10px solid #fff;
-			margin: 0;
-			padding: 0;
-		}
-		.clip {
-			border: 2px solid #222;
-			border-right: none;
-			height: 75px;
-			width: 20px;
-			position: absolute;
-			right: 30%;
-			top: -15%;
-			border-radius: 25px;
-			&:before {
-				content: "";
-				position: absolute;
-				top: -1px;
-				right: 0;
-				height: 10px;
-				width: 16px;
-				border: 2px solid #222;
-				border-bottom: none;
-				border-top-left-radius: 25px;
-				border-top-right-radius: 25px;
-				z-index: 99;					
-			}
-			&:after {
-				content: "";
-				position: absolute;
-				bottom: -1px;
-				right: 0;
-				height: 40px;
-				width: 16px;
-				border: 2px solid #222;
-				border-top: none;
-				border-bottom-left-radius: 25px;
-				border-bottom-right-radius: 25px;
-				z-index: 99;
-			}
-		}
-	}
-}
-
-/* Section4 */
-#hero-img-div0 {
-	height: 75vh;
-	display: flex;
-	justify-content: space-between;
-	/* margin: 20px 0; */
-}
-
-.hero-img-div1 {
-	height: 100%;
-	width: 50%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
-
-.hero-img-div1 div {
-	height: 200%;
-	display: flex;
-	justify-content: space-between;
-}
-
-#frame-1 {
-	width: 47%;
-	/* height: 150%; */
-}
-
-.iframe-2 {
-	height: 37vh;
-}
-
-#hero-img-div2 {
-	display: flex;
-	/* flex-direction: column; */
-	justify-content: space-between;
-	align-items: center;
-}
-
-/* Sec4 */
-#sec-4 {
-	width: 100%;
-	display: flex;
-	flex-direction: column;
-	margin-top: 200px;
-	background-color: black;
-	padding: 50px;
-	color: white;
-}
-
-#divider {
-	width: 100%;
-	height: 1px;
-	background-color: gray;
-	border: 1px solid gray;
-	border-radius: 2px;
-	margin: 50px 0;
-}
-
-#djg-logo-1 {
-	width: 50%;
-	margin: auto;
-}
-
-#hero-img-div3 {
-	display: flex;
-	justify-content: space-between;
-}
-
-#hero-img-div4 {
-	display: flex;
-	justify-content: space-between;
-}
-
-.hero-img-div5 {
-	display: flex;
-	flex-direction: column;
-}
-
-.hero-img-div5 a {
-	color: white;
-	text-decoration: none;
-}
-
-.hero-img-div6 {
-	width: 30%;
-	display: flex;
-	justify-content: space-between;
-	/* flex-direction: column; */
+/* Right Image */
+#ganesh-1 {
+    width: 20vw;
 }

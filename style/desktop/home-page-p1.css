@@ -1,0 +1,129 @@
+/*
+    File: style/desktop/home-page-p1.css
+    Author: Yash Balotiya
+    Description: This file contains styling part of Home page - Section 3 & 5, My Services & Vlogs.
+    Created on: 30/12/2024
+    Last Modified: 01/01/2025
+*/
+
+/* Section 3: My Services */
+#sec-3 {
+    width: 75vw;
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+#sec-3.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Main Services Div */
+#services-div {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+/* Event Card */
+.event-card {
+    display: flex;
+    flex-direction: column;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.event-card.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Event Card Image */
+.event-card img {
+    width: 17vw;
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.event-card.visible img {
+    opacity: 1;
+    transform: scale(1);
+}
+
+/* Event Card Text */
+.event-card h1 {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+}
+
+.event-card.visible h1 {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Event Card Animation */
+.event-card:nth-child(1) {
+    transition-delay: 0.2s;
+}
+
+.event-card:nth-child(2) {
+    transition-delay: 0.4s;
+}
+
+.event-card:nth-child(3) {
+    transition-delay: 0.6s;
+}
+
+.event-card:nth-child(4) {
+    transition-delay: 0.8s;
+}
+
+/* Section 5: Vlogs & Videos */
+.vlog-header {
+	font-size: 3vw;
+	font-weight: bold;
+}
+
+#videos-div {
+	height: 75vh;
+	display: flex;
+	justify-content: space-between;
+	margin: 20px 0;
+}
+
+/* .right-div {
+	height: 100%;
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+} */
+
+/* .right-div div {
+	height: 200%;
+	display: flex;
+	justify-content: space-between;
+} */
+
+#frame1 {
+	width: 47%;
+	/* height: 150%; */
+}
+
+.iframe-2 {
+	height: 37vh;
+}
+
+#child-12 {
+	/* display: flex; */
+	/* flex-direction: column; */
+	/* justify-content: space-between; */
+	/* align-items: center; */
+}

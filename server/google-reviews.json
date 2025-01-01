@@ -1,0 +1,12 @@
+{
+    "reviews": [
+        {
+            "name": "John Doe",
+            "text": "Great place to eat!"
+        },
+        {
+            "name": "Jane Doe",
+            "text": "Good food, but a bit pricey."
+        }
+    ]
+}

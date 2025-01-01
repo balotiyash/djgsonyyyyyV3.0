@@ -1,0 +1,92 @@
+/*
+    File: style/shared/footer.css
+    Author: Yash Balotiya
+    Description: This file contains styling part of Footer.
+    Created on: 30/12/2024
+    Last Modified: 01/01/2025
+*/
+
+/* Footer Section */
+footer {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin-top: 200px;
+	background-color: black;
+	padding: 50px 50px 0 50px;
+	color: white;
+}
+
+/* Top part before divider */
+#part-1 {
+	display: flex;
+	justify-content: space-between;
+}
+
+#links-div {
+	width: 40%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.links-child {
+	display: flex;
+	flex-direction: column;
+}
+
+.links-child a {
+	color: white;
+	text-decoration: none;
+}
+
+/* Divider */
+#divider {
+	width: 100%;
+	height: 1px;
+	background-color: gray;
+	border: 1px solid gray;
+	border-radius: 2px;
+	margin: 50px 0;
+}
+
+/* Part 2 below divider */
+#footer-img {
+	width: 50%;
+	margin: auto;
+}
+
+#dev-info {
+	display: flex;
+	justify-content: space-between;
+    align-items: center;
+}
+
+#dev-info h1 {
+	cursor: pointer;
+}
+
+#designed-by p {
+    color: lightgray;
+}
+
+#social-media a {
+    color: white;
+}    
+
+#social-media {
+    width: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.icon {
+    font-size: 20px;
+}
+
+footer a, footer i {
+    transition: 0.2s ease-in-out all;
+}
+
+footer a:hover, footer i:hover {
+    color: #ff004f;
+}

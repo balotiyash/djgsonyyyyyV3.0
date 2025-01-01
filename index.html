@@ -3,7 +3,7 @@
     Author: Yash Balotiya
     Description: This file contains all the HTML5 code of Home Page.
     Created on: 30/12/2024
-    Last Modified: 31/12/2024
+    Last Modified: 01/01/2025
 -->
 
 <!DOCTYPE html>
@@ -16,6 +16,28 @@
     <!-- Tab Details -->
     <title>DJGSONYYYYY | DJ GANESH</title>
     <link rel="shortcut icon" type="x-icon" href="./asset/svg/headphoneIcon.svg">
+
+    <meta name="description"
+        content="Welcome to DJGSONYYYYY, the ultimate choice for all your event needs! Whether it's a Wedding, Engagement, Birthday party, Navratri celebration, Garba night, Private party, or School/College function, DJGANESH ensures your event is a memorable one. With the best sound, music, and DJ services tailored to your unique event, let us make your special occasion extraordinary.">
+
+    <meta name="keywords"
+        content="DJ for weddings, DJ for parties, DJ for engagement, DJ for birthdays, Best DJ services, DJ for Navratri, DJ for Garba, Professional DJ services, School event DJ, College function DJ, Best sound and music, DJ services for private parties, Event DJ hire, Top-rated DJ, DJ for celebrations, Party DJ services, Mumbai, DJ, Ganesh, DJGSONYYYYY, DJGANESH, DJGSONYYYYY.in, Yash Balotiya, Yash, Balotiya, Ganesh, Sunariwal, Ganesh Sunariwal, AlgoDevs, Mumbai">
+
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="DJGANESH - Best DJ Services for All Events">
+    <meta property="og:description"
+        content="Experience unforgettable moments with DJGANESH at your weddings, parties, Navratri, Garba, and more. Professional DJ services with the best sound and music.">
+
+        <!-- //////////////////////////////////////////////////////// CHANGE IMAGE /////////////////////////////////////// -->
+    <meta property="og:image" content="./asset/image/ganesh-1.jpg">
+    <meta property="og:url" content="https://www.djgsonyyyyy.in/">
+    <meta property="og:site_name" content="DJGSONYYYYY">
+    <meta property="og:type" content="website">
+    <meta property="og:locale" content="en_US">
+    <meta property="og:locale:alternate" content="en_IN">
+    
+    <meta name="author" content="Yash Balotiya">
+    <meta name="application-name" content="DJGSONYYYYY">
 
     <!-- Bootstrap5 -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -39,12 +61,20 @@
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ysabeau+SC:wght@1..1000&display=swap"
         rel="stylesheet">
 
-    <!-- Main Stylesheets -->
-    <link rel="stylesheet" href="./style/desktop/navbar.css">
+    <!-- Stylesheets -->
+    <!-- Navbar & Footer -->
+    <link rel="stylesheet" href="./style/shared/navbar.css">
+    <link rel="stylesheet" href="./style/shared/footer.css">
+
+    <!-- Animated Buttons -->
     <link rel="stylesheet" href="./style/shared/button-1.css">
     <link rel="stylesheet" href="./style/shared/button-2.css">
     <link rel="stylesheet" href="./style/shared/button-3.css">
+
+    <!-- Main Styles -->
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style/desktop/home-page-p1.css">
+    <link rel="stylesheet" href="./style/desktop/home-page-p2.css">
 </head>
 
 <body>
@@ -58,23 +88,23 @@
                             <path
                                 d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
                         </svg> </a></li>
-                <li class="hideOnMobile"><a href="#">Home</a></li>
-                <li class="hideOnMobile"><a href="#">Videos</a></li>
-                <li class="hideOnMobile"><a href="#">Vlogs</a></li>
-                <li class="hideOnMobile"><a href="#">Bookings</a></li>
-                <li class="hideOnMobile"><a href="#">About</a></li>
+                <li class="hideOnMobile"><a href="./">Home</a></li>
+                <li class="hideOnMobile"><a href="./view/videos.html">Videos</a></li>
+                <li class="hideOnMobile"><a href="./view/vlogs.html">Vlogs</a></li>
+                <li class="hideOnMobile"><a href="./view/contact.html">Bookings</a></li>
+                <li class="hideOnMobile"><a href="./view/about.html">About</a></li>
                 <!-- <li><a href="#">Login</a></li> -->
             </ul>
 
             <!-- Desktop -->
             <ul>
-                <li><a href="#"><img src="./asset/image/djg-logo-1.png" alt="DJGSONYYYYY" id="navbar-logo"></a></li>
-                <li class="hideOnMobile"><a href="#">Home</a></li>
-                <li class="hideOnMobile"><a href="#">Videos</a></li>
-                <li class="hideOnMobile"><a href="#">Vlogs</a></li>
-                <li class="hideOnMobile"><a href="#">Bookings</a></li>
-                <li class="hideOnMobile"><a href="#">About</a></li>
-                <li class="hideOnMobile"><a href="#">Login</a></li>
+                <li><a href="./"><img src="./asset/image/djg-logo-1.png" alt="DJGSONYYYYY" id="navbar-logo"></a></li>
+                <li class="hideOnMobile"><a href="./">Home</a></li>
+                <li class="hideOnMobile"><a href="./view/videos.html">Videos</a></li>
+                <li class="hideOnMobile"><a href="./view/vlogs.html">Vlogs</a></li>
+                <li class="hideOnMobile"><a href="./view/contact.html">Bookings</a></li>
+                <li class="hideOnMobile"><a href="./view/about.html">About</a></li>
+                <li class="hideOnMobile"><a href="./view/login.html">Login</a></li>
                 <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
                             height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
                             <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
@@ -87,86 +117,114 @@
     <main>
         <!-- Section 1: Intro -->
         <section id="sec-1" class="sec1">
+            <!-- Hero Image Div -->
             <div id="hero-img-div">
-                <img src="./asset/image/dj-bg-1.jpg" alt="" id="dj-bg-1">
+                <img src="./asset/image/dj-bg-1.jpg" alt="DJ Image" id="hero-img">
             </div>
 
-            <div id="child-2">
+            <!-- Main Content Div Overlapping Hero Image Div -->
+            <div id="main-content-div">
+                <!-- DJGSONYYYYY name -->
                 <!-- <h1 id="dj-name-1">DJGSONYYYYY</h1> -->
                 <h1 id="dj-name-1"></h1>
 
-                <div id="child-3">
-                    <div id="child-4">
+                <!-- Welcome Div -->
+                <div id="welcome-div">
+                    <!-- Welcome Text Div -->
+                    <div id="welcome-text-div">
                         <p>Welcome to the world of music and entertainment! My name is <span
                                 id="ganesh-name-1">DJGanesh</span>, and I am a professional
                             DJ with years of experience in the industry. I have a passion for music that runs deep, and
                             I love to share my energy and enthusiasm with my audience.</p>
 
-                        <button class="button-86" role="button">Contact Me</button>
+                        <!-- Contact Me Button -->
+                        <button class="button-86" role="button" id="contact-me-btn">Contact Me</button>
                     </div>
+
+                    <!-- Ganesh Name -->
                     <h1 id="dj-name-2">DJGAN<span id="ganesh-span">ESH</span></h1>
                 </div>
             </div>
         </section>
 
-        <section class="sec2">
+        <!-- Section 2: About Me -->
+        <section id="sec-2">
+            <!-- About Headers -->
+            <h3 id="about-h3">About Me</h3>
+            <h1 id="professional-h1">PROFESSIONAL DJ</h1>
 
-            <div id="sec-2">
-                <!-- <h1>It has hit <i>v2.0</i>, Check it out to support me</h1> -->
-                <h3 id="about-h3">About Me</h3>
-                <h1 id="professional-h1">PROFESSIONAL DJ</h1>
+            <!-- Main About Us Content -->
+            <div id="about-content-div">
+                <!-- Left Image -->
+                <img src="./asset/image/djg-logo-4.png" alt="DJGSONYYYYY LOGO" id="djg-logo-4">
 
-                <div id="child-5">
-                    <img src="./asset/image/djg-logo-4.png" alt="" id="djg-logo-4">
+                <!-- Main Text -->
+                <div id="about-me-div">
+                    <p>"I specialize in all kinds of events and have performed at countless events, including
+                        weddings, corporate parties, and music festivals. I know how to read a crowd and keep the
+                        dance floor packed all night long.</p>
 
-                    <div id="child-6">
-                        <p>"I specialize in all kinds of events and have performed at countless events, including
-                            weddings, corporate parties, and music festivals. I know how to read a crowd and keep the
-                            dance floor packed all night long.</p>
+                    <p>My sets are a unique blend of the latest hits and classic tunes, infused with my own style
+                        and personality. I use the latest equipment and technology to create a seamless and
+                        unforgettable experience for my audience.</p>
 
-                        <p>My sets are a unique blend of the latest hits and classic tunes, infused with my own style
-                            and personality. I use the latest equipment and technology to create a seamless and
-                            unforgettable experience for my audience.</p>
+                    <p>Whether you are planning a private event or a public show, I am here to provide the ultimate
+                        entertainment experience. Let's make your next event one to remember! Thank you for choosing
+                        me as your DJ."</p>
 
-                        <p>Whether you are planning a private event or a public show, I am here to provide the ultimate
-                            entertainment experience. Let's make your next event one to remember! Thank you for choosing
-                            me as your DJ."</p>
-
-                        <button class="button-49" role="button">Know More</button>
-                    </div>
-
-                    <img src="./asset/image/ganesh-1.jpg" alt="" id="ganesh-1">
+                    <!-- Know More About Me Button -->
+                    <button class="button-49" role="button" id="about-me-btn">Know More</button>
                 </div>
+
+                <!-- Right Image -->
+                <img src="./asset/image/ganesh-1.jpg" alt="DJ GANESH" id="ganesh-1">
             </div>
         </section>
 
+        <!-- Section 3: My Services -->
         <section id="sec-3">
             <h2>My Services</h2>
-            <div id="child-7">
-                <div class="child-8">
-                    <img src="./asset/image/wedding.jpg" alt="">
+
+            <!-- Services Div -->
+            <div id="services-div">
+                <!-- Weddings -->
+                <div class="event-card">
+                    <img src="./asset/image/wedding.jpg" alt="Wedding Image">
                     <h1>WEDDINGS</h1>
                 </div>
-                <div class="child-8">
-                    <img src="./asset/image/private.jpg" alt="">
+
+                <!-- Parties -->
+                <div class="event-card">
+                    <img src="./asset/image/private.jpg" alt="Private Party Image">
                     <h1>PARTIES</h1>
                 </div>
-                <div class="child-8">
-                    <img src="./asset/image/birthday.jpg" alt="">
+
+                <!-- Birthdays -->
+                <div class="event-card">
+                    <img src="./asset/image/birthday.jpg" alt="Birthday Image">
                     <h1>BIRTHDAYS</h1>
                 </div>
-                <div class="child-8">
-                    <img src="./asset/image/garba.jpg" alt="">
+
+                <!-- Garba -->
+                <div class="event-card">
+                    <img src="./asset/image/garba.jpg" alt="Garba Night Image">
                     <h1>GARBA</h1>
                 </div>
             </div>
         </section>
 
-        <section id="sec-5">
+        <!-- Section 4: Testimonial -->
+        <section id="sec-4">
             <h2>Testimonial</h2>
-            <div id="child-7">
-                <div id="child-9">
-                    <img src="./asset/image/google.png" alt="">
+
+            <!-- Testimonial Div -->
+            <div id="testimonial-div">
+                <!-- Left Google Review -->
+                <div id="google-review-div">
+                    <!-- Google Image -->
+                    <img src="./asset/image/google.png" alt="Google">
+
+                    <!-- Star Rating -->
                     <div>
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
@@ -174,21 +232,27 @@
                         <span class="fa fa-star checked"></span>
                         <span class="fa fa-star checked"></span>
                     </div>
+
+                    <!-- Reviews out of 5 -->
                     <h2>4.9/5</h2>
-                    <button class="button-57" role="button"><span class="text">SEE MORE</span><span>REVIEW ME ON
+
+                    <!-- Google Review Button -->
+                    <button class="button-57" role="button" id="review-btn"><span class="text">SEE MORE</span><span>REVIEW ME ON
                             GOOGLE</span></button>
                 </div>
+
+                <!-- Testimonial Div -->
                 <div>
                     <div class="testimonial">
                         <span class="open quote">“</span>
                         <div class="image">
                             <div class="clip"></div>
-                            <img src="https://placehold.co/100">
+                            <!-- <img src="https://placehold.co/100"> -->
+                            <img src="./asset/image/djg-logo-4.png">
                         </div>
-                        <p>This is some testimonial text for this month's CodePen challenge! This is some testimonial
-                            text for this month's CodePen challenge!</p>
+                        <p id="review-text"></p>
                         <div class="source">
-                            <span>Testimonial Source</span>
+                            <span id="review-author"></span>
                         </div>
                         <span class="close quote">”</span>
                     </div>
@@ -196,97 +260,119 @@
             </div>
         </section>
 
+        <!-- Section 5: Vlogs & Videos -->
         <section id="sec-5">
+            <!-- Headers -->
             <h2 class="vlog-header">VLOG</h2>
             <h2 class="vlog-header">& VIDEOS</h2>
 
-            <div id="child-10">
-                <iframe width="" height="" src="https://www.youtube.com/embed/egaJYvhmzoo?si=qXyzugYnKSXgVeTG"
+            <!-- Main Section -->
+            <div id="videos-div">
+                <!-- Left Frame -->
+                <iframe id="frame1"
                     title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen id="frame-1"></iframe>
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-                <div id="child-11">
+                <!-- Right Frames -->
+                <div id="right-div">
+                    <!-- Right Top -->
                     <div>
-                        <iframe width="" height="" src="https://www.youtube.com/embed/egaJYvhmzoo?si=qXyzugYnKSXgVeTG"
+                        <iframe id="frame2"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="iframe-2"></iframe>
 
-                        <iframe width="" height="" src="https://www.youtube.com/embed/egaJYvhmzoo?si=qXyzugYnKSXgVeTG"
+                        <iframe id="frame3"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="iframe-2"></iframe>
                     </div>
-                    <div id="child-12">
-                        <iframe width="" height="" src="https://www.youtube.com/embed/egaJYvhmzoo?si=qXyzugYnKSXgVeTG"
+
+                    <!-- Right Bottom -->
+                    <div>
+                        <iframe id="frame4"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="iframe-2"></iframe>
 
-                        <iframe width="" height="" src="https://www.youtube.com/embed/egaJYvhmzoo?si=qXyzugYnKSXgVeTG"
+                        <iframe id="frame5"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="iframe-2"></iframe>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <section id="sec-4">
-            <div id="child-13">
-                <div>
-                    <h1>Book Me Now</h1>
-                    <p>Ready to take your event to the next level? Book me now and let's make it a night to remember!
-                    </p>
-                    <button class="button-86" role="button">Book Now</button>
-                </div>
-
-                <div class="child-16">
-                    <div class="child-15">
-                        <a href="">Home</a>
-                        <a href="">About</a>
-                        <a href="">Bookings</a>
-                        <a href="">Reviews</a>
-                        <a href="">Help</a>
-                    </div>
-                    <div class="child-15">
-                        <a href="">Home</a>
-                        <a href="">About</a>
-                        <a href="">Bookings</a>
-                        <a href="">Reviews</a>
-                        <a href="">Help</a>
-                    </div>
-                    <div class="child-15">
-                        <a href="">Home</a>
-                        <a href="">About</a>
-                        <a href="">Bookings</a>
-                        <a href="">Reviews</a>
-                        <a href="">Help</a>
-                    </div>
-                </div>
-            </div>
-            <div id="divider"></div>
-            <img src="./asset/image/djg-logo-1.png" alt="" id="djg-logo-1">
-            <div id="child-14">
-                <p>Designed by AlgoDevs</p>
-                <div>
-                    <a href="#"><i class="fab fa-facebook-f"></i></a>
-                    <a href="#"><i class="fab fa-instagram"></i></a>
-                    <a href="#"><i class="fab fa-twitter"></i></a>
-                    <a href="#"><i class="fab fa-youtube"></i></a>
                 </div>
             </div>
         </section>
     </main>
+
+    <!-- Footer -->
+    <footer>
+        <div id="part-1">
+            <div>
+                <h1>Book Me Now</h1>
+                <p>Ready to take your event to the next level? Book me now and let's make it a night to remember!
+                </p>
+                <button class="button-86" role="button" id="book-now-btn">Book Now</button>
+            </div>
+
+            <div id="links-div">
+                <div class="links-child">
+                    <a href="tel:9769794670">+91 97697 94670</a>
+                    <a href="mailto:ganeshsony94@gmail.com">ganeshsony94@gmail.com</a>
+                    <a href="https://maps.app.goo.gl/xnBjsDeZxsL24yUX6/">Shell Colony, Chembur, Mumbai - 71</a>
+                    <a href="https://www.djgsonyyyyy.in/">djgsonyyyyy.in</a>
+                </div>
+                <div class="links-child">
+                    <a href="./">Home</a>
+                    <a href="./view/videos.html">Videos</a>
+                    <a href="./view/vlogs.html">Vlogs</a>
+                    <a href="./view/contact.html">Bookings</a>
+                    <a href="./view/about.html">About</a>
+                    <a href="./view/login.html">Login</a>
+                </div>
+                <div class="links-child">
+                    <a href="https://www.facebook.com/DJGSONYYYYY/">Facebook</a>
+                    <a href="https://www.instagram.com/djgsonyyyyy/">Instagram</a>
+                    <a href="https://www.youtube.com/@djgsonyyyyy?sub_confirmation=1">YouTube</a>
+                    <a href="https://wa.me/919769794670">WhatsApp</a>
+                    <a href="./asset/pdf/DJGSONYYYYY Visiting Card.pdf">Visiting Card</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Horizontal Divider -->
+        <div id="divider"></div>
+
+        <!-- DJ Logo -->
+        <img src="./asset/image/djg-logo-1.png" alt="" id="footer-img">
+        <p style="margin: auto;">© 2025 DJGSONYYYYY. All Rights Reserved.</p>
+
+        <!-- Dev Info -->
+        <div id="dev-info">
+            <div id="designed-by">
+                <p>Designed by
+                <h1 id="algodevs-h1">AlgoDevs</h1>
+                </p>
+            </div>
+            <div id="social-media">
+                <a href="https://www.linkedin.com/in/balotiyash/"><i class="icon fab fa-linkedin"></i></a>
+                <a href="https://github.com/balotiyash/"><i class="icon fa-brands fa-github"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100004170767093/"><i class="icon fab fa-facebook-f"></i></a>
+                <a href="https://www.instagram.com/bella_ciao_adios?utm_source=qr"><i class="icon fab fa-instagram"></i></a>
+                <a href="https://balotiyash.github.io/Personal-Portfolio/"><i class="icon fa-solid fa-globe"></i></a>
+            </div>
+        </div>
+    </footer>
 
     <!-- Script -->
     <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
     <script src="./controller/navbar.js"></script>
     <script src="./main.js"></script>
 
+    <!-- Typing Animation Script -->
     <script>
-        var typed = new Typed("#dj-name-1",{
+        var typed = new Typed("#dj-name-1", {
             strings: ["DJGSONYYYYY"],
             typeSpeed: 100,
             backSpeed: 200,
