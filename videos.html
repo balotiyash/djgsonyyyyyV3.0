@@ -3,7 +3,7 @@
     Author: Neha Balotia
     Description: This file contains all HTML5 code for the videos page.
     Created on: 30/12/2024
-    Last Modified: 30/12/2024
+    Last Modified: 02/02/2025
 -->
 
 <!DOCTYPE html>
@@ -11,14 +11,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style/desktop/videos.css">
+    <link rel="stylesheet" href="/Main/style/desktop/videos.css">
     <title>Videos Page</title>
 </head>
-<body>
-    <div id="vid">
-        <h1>Glimpse of Events</h1>
+<body>]
+    
+    <div id="video">
+        <video autoplay muted loop id="myVideo">
+            <source src="/Main/asset/video/DJ.mp4" type="video/mp4">
+        </video>
+        <div class="text">
+            <h1>Glimpse of Events</h1>
+        </div>
     </div>
-    <div>
+    
+    <div id="vidtxt">
+        <p>Videos</p>
+    </div>
+
+    <div class="vid-large">
         <iframe id="v1" src="https://www.youtube.com/embed/YHlEDOBz-88?si=Nsf2jTE1r9RsuAzQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
     </div>
 
@@ -57,7 +68,7 @@
 
     <!-- <div id="load-more">Load more</div> -->
 
-    <div class="parent-container">
+    <div class="button">
         <button id="load-more">Load More</button>
     </div>
     
