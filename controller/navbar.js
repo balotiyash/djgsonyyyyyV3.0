@@ -21,6 +21,11 @@ document.getElementById('algodevs-h1').addEventListener('click', () => {
     window.location.href = 'https://balotiyash.github.io/Personal-Portfolio/';
 });
 
+// Function to handle Book Now Button in footer
+document.getElementById('book-now-btn').addEventListener('click', () => {
+    window.open('https://wa.me/919769794670', '_blank');
+});
+
 // Dev Info
 console.log('Developed by AlgoDevs - Yash Balotiya');
 console.log('https://balotiyash.github.io/Personal-Portfolio/');

@@ -42,11 +42,6 @@ document.querySelector('#review-btn').addEventListener('click', () => {
     window.location.href = 'https://g.page/r/CbUB0GlQWSXXEBE/review';
 });
 
-// Book Now Button
-document.querySelector('#book-now-btn').addEventListener('click', () => {
-    window.location.href = 'https://wa.me/919769794670';
-});
-
 // Function to fetch Vlogs and Videos
 async function fetchVlogsVideos() {
     const FRAMES = ["frame1", "frame2", "frame3", "frame4", "frame5"];
