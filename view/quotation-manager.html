@@ -3,7 +3,7 @@
     Author: Yash Balotiya
     Description: This file contains frontend part of Quotation Management Page.
     Created on: 27/12/2024
-    Last Modified: 30/12/2024
+    Last Modified: 02/01/2024
 -->
 
 <!DOCTYPE html>
@@ -31,6 +31,14 @@
 
     <!-- Main Stylesheets -->
     <link rel="stylesheet" href="../style/desktop/quotation-manager.css">
+    <link rel="stylesheet" href="../style/desktop/button4.css">
+
+    <!-- Script -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script> -->
+     <!-- Include jsPDF and html2pdf.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
+
 </head>
 <body>
     <!-- Navbar -->
@@ -62,12 +70,12 @@
                     <tr class="left-thick-border">
                         <th>Name</th>
                         <td colspan="2">
-                            <input type="text" id="">
+                            <input type="text" id="name" class="eventDetails" required>
                         </td>
 
                         <th>Contact No.</th>
                         <td colspan="3">
-                            <input type="number" id="">
+                            <input type="number" id="contactNo" class="eventDetails" required>
                         </td>
                     </tr>
 
@@ -75,12 +83,12 @@
                     <tr class="left-thick-border">
                         <th>Location</th>
                         <td colspan="2">
-                            <input type="text" id="">
+                            <input type="text" id="location" class="eventDetails" required>
                         </td>
 
                         <th>Date</th>
                         <td colspan="3">
-                            <input type="date" id="">
+                            <input type="date" id="date" class="eventDetails" required>
                         </td>
                     </tr>
 
@@ -88,12 +96,12 @@
                     <tr class="left-thick-border">
                         <th>Event</th>
                         <td colspan="2">
-                            <input type="text" id="">
+                            <input type="text" id="event" class="eventDetails" required>
                         </td>
 
                         <th>Time</th>
                         <td colspan="3">
-                            <input type="text" id="">
+                            <input type="text" id="time" class="eventDetails" required>
                         </td>
                     </tr>
 
@@ -115,12 +123,12 @@
                         <td>Top</td>
                         <td>1 Unit/s</td>
                         <td>
-                            <input type="number" id="aQnty" value="0" onchange="tallyAmount(this.value, 'aRate', 'aTotal')">
+                            <input type="number" id="aQnty" class="qntyInput" value="0">
                         </td>
                         <td>
-                            <input type="number" id="aRate" value="1500" onchange="tallyAmount(this.value, 'aQnty', 'aTotal')">
+                            <input type="number" id="aRate" class="rateInput" value="1500">
                         </td>
-                        <td colspan="2" class="left-thick-border" id="aTotal">0.00</td>
+                        <td colspan="2" class="left-thick-border hTotal" id="aTotal">0.00</td>
                     </tr>
 
                     <!-- B -->
@@ -129,12 +137,12 @@
                         <td>Line Array</td>
                         <td>1 Unit/s</td>
                         <td>
-                            <input type="number" id="bQnty" value="0" onchange="tallyAmount(this.value, 'bRate', 'bTotal')">
+                            <input type="number" id="bQnty" class="qntyInput" value="0">
                         </td>
                         <td>
-                            <input type="number" id="bRate" value="1500" onchange="tallyAmount(this.value, 'bQnty', 'bTotal')">
+                            <input type="number" id="bRate" class="rateInput" value="1500">
                         </td>
-                        <td colspan="2" class="left-thick-border" id="bTotal">0.00</td>
+                        <td colspan="2" class="left-thick-border hTotal" id="bTotal">0.00</td>
                     </tr>
 
                     <!-- C -->
@@ -143,12 +151,12 @@
                         <td>Bass</td>
                         <td>1 Unit/s</td>
                         <td>
-                            <input type="number" id="cQnty" value="0" onchange="tallyAmount(this.value, 'cRate', 'cTotal')">
+                            <input type="number" id="cQnty" class="qntyInput" value="0">
                         </td>
                         <td>
-                            <input type="number" id="cRate" value="2000" onchange="tallyAmount(this.value, 'cQnty', 'cTotal')">
+                            <input type="number" id="cRate" class="rateInput" value="2000">
                         </td>
-                        <td colspan="2" class="left-thick-border" id="cTotal">0.00</td>
+                        <td colspan="2" class="left-thick-border hTotal" id="cTotal">0.00</td>
                     </tr>
 
                     <!-- D -->
@@ -157,12 +165,12 @@
                         <td>Monitor</td>
                         <td>1 Unit/s</td>
                         <td>
-                            <input type="number" id="dQnty" value="0" onchange="tallyAmount(this.value, 'dRate', 'dTotal')">
+                            <input type="number" id="dQnty" class="qntyInput" value="0">
                         </td>
                         <td>
-                            <input type="number" id="dRate" value="2500" onchange="tallyAmount(this.value, 'dQnty', 'dTotal')">
+                            <input type="number" id="dRate" class="rateInput" class="qntyInput" value="2500">
                         </td>
-                        <td colspan="2" class="left-thick-border" id="dTotal">0.00</td>
+                        <td colspan="2" class="left-thick-border hTotal" id="dTotal">0.00</td>
                     </tr>
 
                     <!-- E -->
@@ -171,12 +179,12 @@
                         <td>Tower</td>
                         <td>1 Unit/s</td>
                         <td>
-                            <input type="number" id="eQnty" value="0" onchange="tallyAmount(this.value, 'eRate', 'eTotal')">
+                            <input type="number" id="eQnty" class="qntyInput" value="0">
                         </td>
                         <td>
-                            <input type="number" id="eRate" value="3500" onchange="tallyAmount(this.value, 'eQnty', 'eTotal')">
+                            <input type="number" id="eRate" class="rateInput" value="3500">
                         </td>
-                        <td colspan="2" class="left-thick-border" id="eTotal">0.00</td>
+                        <td colspan="2" class="left-thick-border hTotal" id="eTotal">0.00</td>
                     </tr>
 
                     <!-- 1 -->
@@ -184,7 +192,7 @@
                         <td>1</td>
                         <td><b>Sound</b></td>
                         <td colspan="3"><b>A + B + C + D + E</b></td>
-                        <td colspan="2" class="left-thick-border" id="">0.00</td>
+                        <td colspan="2" class="left-thick-border" id="soundTotal">0.00</td>
                     </tr>
 
                     <!-- 2 -->
@@ -193,12 +201,12 @@
                         <td>Lazer Lights</td>
                         <td>1 Unit/s</td>
                         <td>
-                            <input type="number" id="" value="0">
+                            <input type="number" id="" class="qntyInput" value="0">
                         </td>
                         <td>
-                            <input type="number" id="" value="500">
+                            <input type="number" id="" class="rateInput" value="500">
                         </td>
-                        <td colspan="2" class="left-thick-border" id="">0.00</td>
+                        <td colspan="2" class="left-thick-border hTotal" id="">0.00</td>
                     </tr>
 
                     <!-- 3 -->
@@ -207,12 +215,12 @@
                         <td>LED Lights</td>
                         <td>1 Unit/s</td>
                         <td>
-                            <input type="number" id="" value="0">
+                            <input type="number" id="" class="qntyInput" value="0">
                         </td>
                         <td>
-                            <input type="number" id="" value="250">
+                            <input type="number" id="" class="rateInput" value="250">
                         </td>
-                        <td colspan="2" class="left-thick-border" id="">0.00</td>
+                        <td colspan="2" class="left-thick-border hTotal" id="">0.00</td>
                     </tr>
 
                     <!-- 4 -->
@@ -221,12 +229,12 @@
                         <td>Sharpy Lights</td>
                         <td>2 Unit/s</td>
                         <td>
-                            <input type="number" id="" value="0">
+                            <input type="number" id="" class="qntyInput" value="0">
                         </td>
                         <td>
-                            <input type="number" id="" value="1500">
+                            <input type="number" id="" class="rateInput" value="1500">
                         </td>
-                        <td colspan="2" class="left-thick-border" id="">0.00</td>
+                        <td colspan="2" class="left-thick-border hTotal" id="">0.00</td>
                     </tr>
 
                     <!-- 5 -->
@@ -235,12 +243,12 @@
                         <td>DMS</td>
                         <td>-</td>
                         <td>
-                            <input type="number" id="" value="0">
+                            <input type="number" id="" class="qntyInput" value="0">
                         </td>
                         <td>
-                            <input type="number" id="" value="1000">
+                            <input type="number" id="" class="rateInput" value="1000">
                         </td>
-                        <td colspan="2" class="left-thick-border" id="">0.00</td>
+                        <td colspan="2" class="left-thick-border hTotal" id="">0.00</td>
                     </tr>
 
                     <!-- 6 -->
@@ -249,12 +257,12 @@
                         <td>Smoke Machine</td>
                         <td>1 Unit/s</td>
                         <td>
-                            <input type="number" id="" value="0">
+                            <input type="number" id="" class="qntyInput" value="0">
                         </td>
                         <td>
-                            <input type="number" id="" value="500">
+                            <input type="number" id="" class="rateInput" value="500">
                         </td>
-                        <td colspan="2" class="left-thick-border" id="">0.00</td>
+                        <td colspan="2" class="left-thick-border hTotal" id="">0.00</td>
                     </tr class="left-thick-border">
 
                     <!-- 7 -->
@@ -263,12 +271,12 @@
                         <td>LED Screen</td>
                         <td>1 Sq. Ft.</td>
                         <td>
-                            <input type="number" id="" value="0">
+                            <input type="number" id="" class="qntyInput" value="0">
                         </td>
                         <td>
-                            <input type="number" id="" value="85">
+                            <input type="number" id="" class="rateInput" value="85">
                         </td>
-                        <td colspan="2" class="left-thick-border" id="">0.00</td>
+                        <td colspan="2" class="left-thick-border hTotal" id="">0.00</td>
                     </tr class="left-thick-border">
 
                     <!-- 8 -->
@@ -277,12 +285,12 @@
                         <td>DJ</td>
                         <td>-</td>
                         <td>
-                            <input type="number" id="" value="0">
+                            <input type="number" id="" class="qntyInput" value="0">
                         </td>
                         <td>
-                            <input type="number" id="" value="5000">
+                            <input type="number" id="" class="rateInput" value="5000">
                         </td>
-                        <td colspan="2" class="left-thick-border" id="">0.00</td>
+                        <td colspan="2" class="left-thick-border hTotal" id="">0.00</td>
                     </tr class="left-thick-border">
 
                     <!-- 9 -->
@@ -291,12 +299,12 @@
                         <td>Mic</td>
                         <td>2 Unit/s</td>
                         <td>
-                            <input type="number" id="" value="0">
+                            <input type="number" id="" class="qntyInput" value="0">
                         </td>
                         <td>
-                            <input type="number" id="" value="500">
+                            <input type="number" id="" class="rateInput" value="500">
                         </td>
-                        <td colspan="2" class="left-thick-border" id="">0.00</td>
+                        <td colspan="2" class="left-thick-border hTotal" id="">0.00</td>
                     </tr>
 
                     <!-- 10 -->
@@ -305,12 +313,12 @@
                         <td>Truck</td>
                         <td>-</td>
                         <td>
-                            <input type="number" id="" value="0">
+                            <input type="number" id="" class="qntyInput" value="0">
                         </td>
                         <td>
-                            <input type="number" id="" value="10000">
+                            <input type="number" id="" class="rateInput" value="10000">
                         </td>
-                        <td colspan="2" class="left-thick-border" id="">0.00</td>
+                        <td colspan="2" class="left-thick-border hTotal" id="">0.00</td>
                     </tr class="left-thick-border">
 
                     <!-- 11 -->
@@ -319,12 +327,12 @@
                         <td>Banner</td>
                         <td>-</td>
                         <td>
-                            <input type="number" id="" value="0">
+                            <input type="number" id="" class="qntyInput" value="0">
                         </td>
                         <td>
-                            <input type="number" id="" value="10000">
+                            <input type="number" id="" class="rateInput" value="10000">
                         </td>
-                        <td colspan="2" class="left-thick-border" id="">0.00</td>
+                        <td colspan="2" class="left-thick-border hTotal" id="">0.00</td>
                     </tr>
 
                     <!-- 12 -->
@@ -333,12 +341,12 @@
                         <td>Truss</td>
                         <td>-</td>
                         <td>
-                            <input type="number" id="" value="0">
+                            <input type="number" id="" class="qntyInput" value="0">
                         </td>
                         <td>
-                            <input type="number" id="" value="10000">
+                            <input type="number" id="" class="rateInput" value="10000">
                         </td>
-                        <td colspan="2" class="left-thick-border" id="">0.00</td>
+                        <td colspan="2" class="left-thick-border hTotal" id="">0.00</td>
                     </tr>
 
                     <!-- 13 -->
@@ -347,12 +355,12 @@
                         <td>Generator</td>
                         <td>-</td>
                         <td>
-                            <input type="number" id="" value="0">
+                            <input type="number" id="" class="qntyInput" value="0">
                         </td>
                         <td>
-                            <input type="number" id="" value="20000">
+                            <input type="number" id="" class="rateInput" value="20000">
                         </td>
-                        <td colspan="2" class="left-thick-border" id="">0.00</td>
+                        <td colspan="2" class="left-thick-border hTotal" id="">0.00</td>
                     </tr>
 
                     <!-- 14 -->
@@ -361,12 +369,12 @@
                         <td>Pyro Machine</td>
                         <td>5 Unit/s</td>
                         <td>
-                            <input type="number" id="" value="0">
+                            <input type="number" id="" class="qntyInput" value="0">
                         </td>
                         <td>
-                            <input type="number" id="" value="2000">
+                            <input type="number" id="" class="rateInput" value="2000">
                         </td>
-                        <td colspan="2" class="left-thick-border" id="">0.00</td>
+                        <td colspan="2" class="left-thick-border hTotal" id="">0.00</td>
                     </tr>
 
                     <!-- 15 -->
@@ -375,33 +383,33 @@
                         <td>Confetti Machine</td>
                         <td>10 Shots</td>
                         <td>
-                            <input type="number" id="" value="0">
+                            <input type="number" id="" class="qntyInput" value="0">
                         </td>
                         <td>
-                            <input type="number" id="" value="5000">
+                            <input type="number" id="" class="rateInput" value="5000">
                         </td>
-                        <td colspan="2" class="left-thick-border" id="">0.00</td>
+                        <td colspan="2" class="left-thick-border hTotal" id="">0.00</td>
                     </tr>
 
                     <!-- Subtotal -->
                     <tr class="thick-border">
                         <td colspan="5" class="right-align">Sub Total</td>
-                        <td colspan="2" class="left-thick-border right-align">₹ <span>0.00</span></td>
+                        <td colspan="2" class="left-thick-border right-align">₹ <span id="subTotal">0.00</span></td>
                     </tr>
 
                     <!-- Discount -->
                     <tr class="thick-border">
                         <td colspan="5" class="right-align left-thick-border">Discount</td>
                         <td class="th2 left-thick-border" id="discount-td">
-                            <input type="number" name="" id="">%
+                            <input type="number" name="" id="discountInput" value="0">%
                         </td>
-                        <td class="th3 right-align">₹ <span>0.00</span></td>
+                        <td class="th3 right-align">₹ <span id="discountAmount">0.00</span></td>
                     </tr>
 
                     <!-- Grand Total -->
                     <tr class="thick-border">
                         <td colspan="5" class="right-align">Grand Total</td>
-                        <td colspan="2" class="left-thick-border right-align">₹ <span>0.00</span></td>
+                        <td colspan="2" class="left-thick-border right-align">₹ <span id="grandTotal">0.00</span></td>
                     </tr>
 
                     <!-- Greetings -->
@@ -428,6 +436,7 @@
                     </tr>
                 </tbody>
             </table>
+            <button class="button-52" role="button" id="downloadBtn">Download</button>
         </section>
     </main>
 
@@ -435,7 +444,6 @@
     <footer></footer>
 
     <!-- Scripts -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.min.js"></script>
     <script src="../controller/quotation-manager.js"></script>
 </body>
 </html>
