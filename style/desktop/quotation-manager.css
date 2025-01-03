@@ -1,9 +1,9 @@
 /*
-    File: quotation-manager.css
+    File: style/desktop/quotation-manager.css
     Author: Yash Balotiya
     Description: This file contains stylling part of Quotation Management Page
     Created on: 27/12/2024
-    Last Modified: 02/01/2025
+    Last Modified: 03/01/2025
 */
 
 * {
@@ -21,29 +21,47 @@ body {
     align-items: center;
 }
 
+/* Main Section */
 main {
-    /* width: 50%; */
+    width: 50%;
 }
 
+/* Main Table */
 table {
     border-collapse: collapse;
-    /* border: 2px solid black; */
 }
 
 th, td {
     border: 1px solid black;
-    /* padding: 4px; */
     text-align: center;
 }
 
+/* Table header image */
+#djg-logo-1 {
+    width: 50%;
+}
+
+.black-bg {
+    background-color: black;
+}
+
+#dj-ganesh-h1 {
+    color: gray;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+}
+
+/* Sr. No.	Item Description	Unit	Quantity	Rate	Amount */
 .th1 {
     width: 130px;
 }
 
+/* Discount Input TH */
 .th2 {
     width: 20px;
 }
 
+/* Discount Amount TH */
 .th3 {
     width: 100px;
 }
@@ -88,21 +106,6 @@ input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
   -webkit-appearance: none;
   margin: 0;
-}
-
-#djg-logo-1 {
-    width: 50%;
-}
-
-.black-bg {
-    background-color: black;
-}
-
-#dj-ganesh-h1 {
-    color: gray;
-    font-family: 'Playfair Display', serif;
-    font-size: 20px;
-
 }
 
 #sign-img {

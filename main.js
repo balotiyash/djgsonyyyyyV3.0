@@ -3,7 +3,7 @@
  * Author: Yash Balotiya
  * Description: This file contains the main JavaScript code for the Home Page.
  * Created on: 31/12/2024
- * Last Modified: 01/01/2025
+ * Last Modified: 03/01/2025
 */
 
 // My Services Section Animation
@@ -16,7 +16,7 @@ const observer = new IntersectionObserver((entries, observer) => {
         }
     });
 }, {
-    threshold: 0.2 // Trigger when 20% of the section is visible
+    threshold: 0.3 // Trigger when 20% of the section is visible
 });
 
 // Observe the main section
@@ -45,15 +45,6 @@ document.querySelector('#review-btn').addEventListener('click', () => {
 // Book Now Button
 document.querySelector('#book-now-btn').addEventListener('click', () => {
     window.location.href = 'https://wa.me/919769794670';
-});
-
-// Dev Info
-console.log('Developed by AlgoDevs - Yash Balotiya');
-console.log('https://balotiyash.github.io/Personal-Portfolio/');
-
-// AlgoDevs
-document.querySelector('#algodevs-h1').addEventListener('click', () => {
-    window.location.href = 'https://balotiyash.github.io/Personal-Portfolio/';
 });
 
 // Function to fetch Vlogs and Videos
@@ -138,6 +129,10 @@ async function fetchGoogleReviews() {
 
 // Onload Function
 window.onload = async function () {
+    // Setting the isLoggedIn to false by default
+    window.localStorage.setItem('isLoggedIn', 'false');
+
+    // Calling the functions to fetch Vlogs and Google Reviews
     fetchVlogsVideos();
     fetchGoogleReviews();
 }
