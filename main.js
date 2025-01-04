@@ -3,7 +3,7 @@
  * Author: Yash Balotiya
  * Description: This file contains the main JavaScript code for the Home Page.
  * Created on: 31/12/2024
- * Last Modified: 03/01/2025
+ * Last Modified: 04/01/2025
 */
 
 // My Services Section Animation
@@ -39,7 +39,7 @@ document.querySelector('#about-me-btn').addEventListener('click', () => {
 
 // Review Button
 document.querySelector('#review-btn').addEventListener('click', () => {
-    window.location.href = 'https://g.page/r/CbUB0GlQWSXXEBE/review';
+    window.open('https://g.page/r/CbUB0GlQWSXXEBE/review', '_blank');
 });
 
 // Function to fetch Vlogs and Videos

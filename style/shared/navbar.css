@@ -1,20 +1,10 @@
 /*
     File: style/desktop/navbar.css
-    Author: Neha Balotia
+    Author: Neha Balotia, Yash Balotiya
     Description: This file contains styling part of Navbar.
     Created on: 30/12/2024
-    Last Modified: 31/12/2024
+    Last Modified: 04/01/2025
 */
-
-/* * {
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    min-height: 100vh;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-} */
 
 #navbar-logo {
     width: 400px;
@@ -27,7 +17,6 @@ header {
 
 nav {
     width: 100%;
-    /* background-color: white; */
     background-color: #000;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.1);
 }
@@ -40,25 +29,19 @@ nav ul {
     align-items: center;
 }
 
-nav li {
-    /* height: 50px; */
-}
-
 nav a {
     height: 100%;
     padding: 0 30px;
     text-decoration: none;
     display: flex;
     align-items: center;
-    /* color: black; */
     color: white;
     transition: 0.2s ease-in-out all;
+    font-size: 16px;
 }
 
 nav a:hover {
-    /* background-color: #f0f0f0; */
     color: #ff004f;
-    
 }
 
 nav li:first-child {

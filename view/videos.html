@@ -3,7 +3,7 @@
     Author: Neha Balotia, Yash Balotiya
     Description: This file contains all HTML5 code for the videos page.
     Created on: 30/12/2024
-    Last Modified: 03/01/2025
+    Last Modified: 04/01/2025
 -->
 
 <!DOCTYPE html>
@@ -85,8 +85,8 @@
                                 d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
                         </svg> </a></li>
                 <li class="hideOnMobile"><a href="../">Home</a></li>
-                <li class="hideOnMobile"><a href="./videos.html">Videos</a></li>
-                <li class="hideOnMobile"><a href="./vlogs.html">Vlogs</a></li>
+                <li class="hideOnMobile"><a href="./videos.html?type=1">Videos</a></li>
+                <li class="hideOnMobile"><a href="./videos.html?type=2">Vlogs</a></li>
                 <li class="hideOnMobile"><a href="./contact.html">Bookings</a></li>
                 <li class="hideOnMobile"><a href="./about.html">About</a></li>
                 <!-- <li><a href="#">Login</a></li> -->
@@ -96,8 +96,8 @@
             <ul>
                 <li><a href="../"><img src="../asset/image/djg-logo-1.png" alt="DJGSONYYYYY" id="navbar-logo"></a></li>
                 <li class="hideOnMobile"><a href="../">Home</a></li>
-                <li class="hideOnMobile"><a href="./videos.html">Videos</a></li>
-                <li class="hideOnMobile"><a href="./vlogs.html">Vlogs</a></li>
+                <li class="hideOnMobile"><a href="./videos.html?type=1">Videos</a></li>
+                <li class="hideOnMobile"><a href="./videos.html?type=2">Vlogs</a></li>
                 <li class="hideOnMobile"><a href="./contact.html">Bookings</a></li>
                 <li class="hideOnMobile"><a href="./about.html">About</a></li>
                 <li class="hideOnMobile"><a href="./login.html">Login</a></li>
@@ -114,7 +114,7 @@
         <!-- Main Auto Video Section -->
         <section id="video">
             <video autoplay muted loop id="myVideo">
-                <source src="../asset/video/DJ.mp4" type="video/mp4">
+                <source type="video/mp4" id="video-source">
 
                 <!-- Fallback for other browsers -->
                 <source src="../asset/video/DJ.ogg" type="video/ogg">
@@ -130,10 +130,15 @@
         <p id="vidtxt">Videos</p>
 
         <!-- Large Iframe Section -->
-        <section class="vid-large">
+        <section class="vid-large" id="large-iframe-container">
             <iframe id="v1" title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </section>
+
+        <section id="not-found-sec">
+            <img src="../asset/svg/not-found.svg" alt="Videos Not Found">
+            <p id="not-found">No videos found. Check back later for more updates!</p>
         </section>
 
         <!-- Other Iframes Section -->
@@ -157,25 +162,25 @@
 
             <div id="links-div">
                 <div class="links-child">
-                    <a href="tel:9769794670">+91 97697 94670</a>
-                    <a href="mailto:ganeshsony94@gmail.com">ganeshsony94@gmail.com</a>
-                    <a href="https://maps.app.goo.gl/xnBjsDeZxsL24yUX6/">Shell Colony, Chembur, Mumbai - 71</a>
-                    <a href="https://www.djgsonyyyyy.in/">djgsonyyyyy.in</a>
+                    <a target="_blank" href="tel:9769794670">+91 97697 94670</a>
+                    <a target="_blank" href="mailto:ganeshsony94@gmail.com">ganeshsony94@gmail.com</a>
+                    <a target="_blank" href="https://maps.app.goo.gl/xnBjsDeZxsL24yUX6/">Shell Colony, Chembur, Mumbai - 71</a>
+                    <a target="_blank" href="https://www.djgsonyyyyy.in/">djgsonyyyyy.in</a>
                 </div>
                 <div class="links-child">
                     <a href="../">Home</a>
-                    <a href="./videos.html">Videos</a>
-                    <a href="./vlogs.html">Vlogs</a>
+                    <a href="./videos.html?type=1">Videos</a>
+                    <a href="./videos.html?type=2">Vlogs</a>
                     <a href="./contact.html">Bookings</a>
                     <a href="./about.html">About</a>
                     <a href="./login.html">Login</a>
                 </div>
                 <div class="links-child">
-                    <a href="https://www.facebook.com/DJGSONYYYYY/">Facebook</a>
-                    <a href="https://www.instagram.com/djgsonyyyyy/">Instagram</a>
-                    <a href="https://www.youtube.com/@djgsonyyyyy?sub_confirmation=1">YouTube</a>
-                    <a href="https://wa.me/919769794670">WhatsApp</a>
-                    <a href="../asset/pdf/DJGSONYYYYY Visiting Card.pdf">Visiting Card</a>
+                    <a target="_blank" href="https://www.facebook.com/DJGSONYYYYY/">Facebook</a>
+                    <a target="_blank" href="https://www.instagram.com/djgsonyyyyy/">Instagram</a>
+                    <a target="_blank" href="https://www.youtube.com/@djgsonyyyyy?sub_confirmation=1">YouTube</a>
+                    <a target="_blank" href="https://wa.me/919769794670">WhatsApp</a>
+                    <a target="_blank" href="../asset/pdf/DJGSONYYYYY Visiting Card.pdf">Visiting Card</a>
                 </div>
             </div>
         </div>
@@ -195,13 +200,13 @@
                 </p>
             </div>
             <div id="social-media">
-                <a href="https://www.linkedin.com/in/balotiyash/"><i class="icon fab fa-linkedin"></i></a>
-                <a href="https://github.com/balotiyash/"><i class="icon fa-brands fa-github"></i></a>
-                <a href="https://www.facebook.com/profile.php?id=100004170767093/"><i
+                <a target="_blank" href="https://www.linkedin.com/in/balotiyash/"><i class="icon fab fa-linkedin"></i></a>
+                <a target="_blank" href="https://github.com/balotiyash/"><i class="icon fa-brands fa-github"></i></a>
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=100004170767093/"><i
                         class="icon fab fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/bella_ciao_adios?utm_source=qr"><i
+                <a target="_blank" href="https://www.instagram.com/bella_ciao_adios?utm_source=qr"><i
                         class="icon fab fa-instagram"></i></a>
-                <a href="https://balotiyash.github.io/Personal-Portfolio/"><i class="icon fa-solid fa-globe"></i></a>
+                <a target="_blank" href="https://balotiyash.github.io/Personal-Portfolio/"><i class="icon fa-solid fa-globe"></i></a>
             </div>
         </div>
     </footer>

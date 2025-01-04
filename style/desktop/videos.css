@@ -3,7 +3,7 @@
     Author: Neha Balotia, Yash Balotiya
     Description: This file contains all CSS code for the videos page.
     Created on: 30/12/2024
-    Last Modified: 03/02/2025
+    Last Modified: 04/02/2025
 */
 
 * {
@@ -80,6 +80,18 @@ main {
     padding-top: 10px;
     width: 100%;
     height: 70vh;
+}
+
+#not-found-sec {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+}
+
+#not-found-sec img {
+    width: 50%;
 }
 
 /* Small Iframe Section */

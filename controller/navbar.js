@@ -3,7 +3,7 @@
  * Author: Neha Balotia
  * Description: This file contains Logical Part to control Navbar also security measures required accross shared pages.
  * Created on: 30/12/2024
- * Last Modified: 03/01/2025
+ * Last Modified: 04/01/2025
 */
 
 function showSidebar() {
@@ -18,7 +18,7 @@ function hideSidebar() {
 
 // Function to open AlgoDevs Profile in footer
 document.getElementById('algodevs-h1').addEventListener('click', () => {
-    window.location.href = 'https://balotiyash.github.io/Personal-Portfolio/';
+    window.open('https://balotiyash.github.io/Personal-Portfolio/', '_blank');
 });
 
 // Function to handle Book Now Button in footer

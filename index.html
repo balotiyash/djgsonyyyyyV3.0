@@ -3,7 +3,7 @@
     Author: Yash Balotiya
     Description: This file contains all the HTML5 code of Home Page.
     Created on: 30/12/2024
-    Last Modified: 03/01/2025
+    Last Modified: 04/01/2025
 -->
 
 <!DOCTYPE html>
@@ -34,7 +34,7 @@
     <meta property="og:type" content="website">
     <meta property="og:locale" content="en_US">
     <meta property="og:locale:alternate" content="en_IN">
-    
+
     <meta name="author" content="Yash Balotiya">
     <meta name="application-name" content="DJGSONYYYYY">
 
@@ -88,8 +88,8 @@
                                 d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
                         </svg> </a></li>
                 <li class="hideOnMobile"><a href="./">Home</a></li>
-                <li class="hideOnMobile"><a href="./view/videos.html">Videos</a></li>
-                <li class="hideOnMobile"><a href="./view/vlogs.html">Vlogs</a></li>
+                <li class="hideOnMobile"><a href="./view/videos.html?type=1">Videos</a></li>
+                <li class="hideOnMobile"><a href="./view/videos.html?type=2">Vlogs</a></li>
                 <li class="hideOnMobile"><a href="./view/contact.html">Bookings</a></li>
                 <li class="hideOnMobile"><a href="./view/about.html">About</a></li>
                 <!-- <li><a href="#">Login</a></li> -->
@@ -99,8 +99,8 @@
             <ul>
                 <li><a href="./"><img src="./asset/image/djg-logo-1.png" alt="DJGSONYYYYY" id="navbar-logo"></a></li>
                 <li class="hideOnMobile"><a href="./">Home</a></li>
-                <li class="hideOnMobile"><a href="./view/videos.html">Videos</a></li>
-                <li class="hideOnMobile"><a href="./view/vlogs.html">Vlogs</a></li>
+                <li class="hideOnMobile"><a href="./view/videos.html?type=1">Videos</a></li>
+                <li class="hideOnMobile"><a href="./view/videos.html?type=2">Vlogs</a></li>
                 <li class="hideOnMobile"><a href="./view/contact.html">Bookings</a></li>
                 <li class="hideOnMobile"><a href="./view/about.html">About</a></li>
                 <li class="hideOnMobile"><a href="./view/login.html">Login</a></li>
@@ -236,7 +236,8 @@
                     <h2>4.9/5</h2>
 
                     <!-- Google Review Button -->
-                    <button class="button-57" role="button" id="review-btn"><span class="text">SEE MORE</span><span>REVIEW ME ON
+                    <button class="button-57" role="button" id="review-btn"><span class="text">SEE
+                            MORE</span><span>REVIEW ME ON
                             GOOGLE</span></button>
                 </div>
 
@@ -268,8 +269,7 @@
             <!-- Main Section -->
             <div id="videos-div">
                 <!-- Left Frame -->
-                <iframe id="frame1"
-                    title="YouTube video player" frameborder="0"
+                <iframe id="frame1" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -277,26 +277,22 @@
                 <div id="right-div">
                     <!-- Right Top -->
                     <div>
-                        <iframe id="frame2"
-                            title="YouTube video player" frameborder="0"
+                        <iframe id="frame2" title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="iframe-2"></iframe>
 
-                        <iframe id="frame3"
-                            title="YouTube video player" frameborder="0"
+                        <iframe id="frame3" title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="iframe-2"></iframe>
                     </div>
 
                     <!-- Right Bottom -->
                     <div>
-                        <iframe id="frame4"
-                            title="YouTube video player" frameborder="0"
+                        <iframe id="frame4" title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="iframe-2"></iframe>
 
-                        <iframe id="frame5"
-                            title="YouTube video player" frameborder="0"
+                        <iframe id="frame5" title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerpolicy="strict-origin-when-cross-origin" allowfullscreen class="iframe-2"></iframe>
                     </div>
@@ -317,25 +313,26 @@
 
             <div id="links-div">
                 <div class="links-child">
-                    <a href="tel:9769794670">+91 97697 94670</a>
-                    <a href="mailto:ganeshsony94@gmail.com">ganeshsony94@gmail.com</a>
-                    <a href="https://maps.app.goo.gl/xnBjsDeZxsL24yUX6/">Shell Colony, Chembur, Mumbai - 71</a>
-                    <a href="https://www.djgsonyyyyy.in/">djgsonyyyyy.in</a>
+                    <a target="_blank" href="tel:9769794670">+91 97697 94670</a>
+                    <a target="_blank" href="mailto:ganeshsony94@gmail.com">ganeshsony94@gmail.com</a>
+                    <a target="_blank" href="https://maps.app.goo.gl/xnBjsDeZxsL24yUX6/">Shell Colony, Chembur, Mumbai -
+                        71</a>
+                    <a target="_blank" href="https://www.djgsonyyyyy.in/">djgsonyyyyy.in</a>
                 </div>
                 <div class="links-child">
                     <a href="./">Home</a>
-                    <a href="./view/videos.html">Videos</a>
-                    <a href="./view/vlogs.html">Vlogs</a>
+                    <a href="./view/videos.html?type=1">Videos</a>
+                    <a href="./view/videos.html?type=2">Vlogs</a>
                     <a href="./view/contact.html">Bookings</a>
                     <a href="./view/about.html">About</a>
                     <a href="./view/login.html">Login</a>
                 </div>
                 <div class="links-child">
-                    <a href="https://www.facebook.com/DJGSONYYYYY/">Facebook</a>
-                    <a href="https://www.instagram.com/djgsonyyyyy/">Instagram</a>
-                    <a href="https://www.youtube.com/@djgsonyyyyy?sub_confirmation=1">YouTube</a>
-                    <a href="https://wa.me/919769794670">WhatsApp</a>
-                    <a href="./asset/pdf/DJGSONYYYYY Visiting Card.pdf">Visiting Card</a>
+                    <a target="_blank" href="https://www.facebook.com/DJGSONYYYYY/">Facebook</a>
+                    <a target="_blank" href="https://www.instagram.com/djgsonyyyyy/">Instagram</a>
+                    <a target="_blank" href="https://www.youtube.com/@djgsonyyyyy?sub_confirmation=1">YouTube</a>
+                    <a target="_blank" href="https://wa.me/919769794670">WhatsApp</a>
+                    <a target="_blank" href="./asset/pdf/DJGSONYYYYY Visiting Card.pdf">Visiting Card</a>
                 </div>
             </div>
         </div>
@@ -355,11 +352,15 @@
                 </p>
             </div>
             <div id="social-media">
-                <a href="https://www.linkedin.com/in/balotiyash/"><i class="icon fab fa-linkedin"></i></a>
-                <a href="https://github.com/balotiyash/"><i class="icon fa-brands fa-github"></i></a>
-                <a href="https://www.facebook.com/profile.php?id=100004170767093/"><i class="icon fab fa-facebook-f"></i></a>
-                <a href="https://www.instagram.com/bella_ciao_adios?utm_source=qr"><i class="icon fab fa-instagram"></i></a>
-                <a href="https://balotiyash.github.io/Personal-Portfolio/"><i class="icon fa-solid fa-globe"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/in/balotiyash/"><i
+                        class="icon fab fa-linkedin"></i></a>
+                <a target="_blank" href="https://github.com/balotiyash/"><i class="icon fa-brands fa-github"></i></a>
+                <a target="_blank" href="https://www.facebook.com/profile.php?id=100004170767093/"><i
+                        class="icon fab fa-facebook-f"></i></a>
+                <a target="_blank" href="https://www.instagram.com/bella_ciao_adios?utm_source=qr"><i
+                        class="icon fab fa-instagram"></i></a>
+                <a target="_blank" href="https://balotiyash.github.io/Personal-Portfolio/"><i
+                        class="icon fa-solid fa-globe"></i></a>
             </div>
         </div>
     </footer>
