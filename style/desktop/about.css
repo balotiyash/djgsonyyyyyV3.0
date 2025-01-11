@@ -3,11 +3,10 @@
     Author: Yash Balotiya
     Description: This file contains styling part of Contact Us page.
     Created on: 09/01/2025
-    Last Modified: 09/01/2025
+    Last Modified: 11/01/2025
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
-@import 'normalize.css';
 
 #aboutHeaderText h3,
 #aboutHeaderText h1,
@@ -34,7 +33,6 @@ main {
 
 /* Header Text Section */
 #aboutHeaderText {
-    /* width: 100%; */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -48,12 +46,13 @@ main {
 }
 
 #aboutHeaderText h1 {
+    color: #ff004f;
     font-size: 30px;
 }
 
 /* About Me Section 1 */
 #aboutMeSec1 {
-    width: 50%;
+    width: 700px;
     height: auto;
     display: flex;
     margin-top: 50px;
@@ -65,9 +64,11 @@ main {
     justify-content: space-between;
 }
 
-#aboutMeSec1 img {
+#aboutMeSec1 video {
     width: 50%;
-    height: auto;
+    height: 500px;
+    border: none;
+    border-radius: 20px;
 }
 
 #aboutText1 {
@@ -90,11 +91,11 @@ main {
 #socialMediaDiv span {
     width: 50px;
     height: 50px;
-    /* background-color: black; */
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 #socialMediaDiv span i {
@@ -134,7 +135,6 @@ main {
     width: 75%;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     margin-top: 100px;
 }
 
@@ -156,7 +156,6 @@ main {
     border-radius: 8px;
     display: flex;
     flex-direction: column;
-    /* justify-content: space-between; */
     align-items: center;
 }
 
@@ -175,7 +174,7 @@ main {
     margin-bottom: 20px;
 }
 
-#collegeEventsDiv {
+.collegeEventsDiv {
     width: 100%;
     display: flex;
     justify-content: space-between;
@@ -184,18 +183,30 @@ main {
     margin-top: 50px;
 }
 
-#collegeEventsDiv img {
-    width: 60%;
-    border-radius: 8px 0 0 8px;
+.collegeEventsDiv img {
+    width: 40vw;
+    border-radius: 8px;
 }
 
-#collegeEventsDiv div {
-    /* width: 40%; */
+.college-img {
+    display: none;
+}
+
+.collegeEventsDiv div {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+}
+
+.collegeEventsDiv div p,
+.collegeEventsDiv div b {
+    text-align: center;
+}
+
+.topWorkCard {
+    flex-direction: row-reverse;
 }
 
 /* Count */
@@ -211,10 +222,8 @@ main {
 
 .value {
     font-size: 50px;
-    /* font-size: 150px; */
     display: block;
     font-weight: bold;
-    /* color: #fff; */
 }
 
 /* Education */
@@ -224,4 +233,28 @@ main {
 
 .training {
     width: 30%;
+}
+
+/* Animation */
+/* Add these CSS classes for animation */
+.workCard, .collegeEventsDiv {
+    opacity: 0; /* Start as invisible */
+    transform: translateY(30px); /* Start slightly below */
+    transition: opacity 0.5s, transform 0.5s ease-in-out;
+}
+
+.workCard.visible, .collegeEventsDiv.visible {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Slide to original position */
+}
+
+/* Optional: Add a delay for each card/section */
+.workCard:nth-child(1), .collegeEventsDiv:nth-child(1) {
+    transition-delay: 0.2s;
+}
+.workCard:nth-child(2), .collegeEventsDiv:nth-child(2) {
+    transition-delay: 0.4s;
+}
+.workCard:nth-child(3), .collegeEventsDiv:nth-child(3) {
+    transition-delay: 0.6s;
 }

@@ -3,7 +3,7 @@
     Author: Yash Balotiya
     Description: This file contains all the HTML5 code of Contact Me Page.
     Created on: 09/01/2025
-    Last Modified: 10/01/2025
+    Last Modified: 11/01/2025
 -->
 
 <!DOCTYPE html>
@@ -66,13 +66,11 @@
     <link rel="stylesheet" href="../style/shared/footer.css">
 
     <!-- Animated Buttons -->
-    <link rel="stylesheet" href="../style/shared/button-1.css">
-    <link rel="stylesheet" href="../style/shared/button-2.css">
-    <link rel="stylesheet" href="../style/shared/button-3.css">
+    <link rel="stylesheet" href="../style/shared/button-5.css">
 
     <!-- Main Styles -->
     <link rel="stylesheet" href="../style/desktop/about.css">
-    <link rel="stylesheet" href="../style/shared/layers-animation.css">
+    <link rel="stylesheet" href="../style/responsive/about.css">
 </head>
 
 <body>
@@ -86,27 +84,39 @@
                             <path
                                 d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
                         </svg> </a></li>
-                <li class="hideOnMobile"><a href="../">Home</a></li>
-                <li class="hideOnMobile"><a href="./videos.html?type=1">Videos</a></li>
-                <li class="hideOnMobile"><a href="./videos.html?type=2">Vlogs</a></li>
-                <li class="hideOnMobile"><a href="./contact.html">Bookings</a></li>
-                <li class="hideOnMobile"><a href="./about.html">About</a></li>
-                <!-- <li><a href="#">Login</a></li> -->
+                <li><a href="../">Home</a></li>
+                <li><a href="../view/videos.html?type=1">Videos</a></li>
+                <li><a href="../view/videos.html?type=2">Vlogs</a></li>
+                <li><a href="../view/contact.html">Bookings</a></li>
+                <li><a href="../view/about.html">About</a></li>
             </ul>
 
             <!-- Desktop -->
-            <ul>
-                <li><a href="../"><img src="../asset/image/djg-logo-1.png" alt="DJGSONYYYYY" id="navbar-logo"></a></li>
+            <ul class="navbar">
+                <li class="one"><a href="../"><img src="../asset/image/djg-logo-1.png" alt="DJGSONYYYYY"
+                            id="navbar-logo"></a></li>
                 <li class="hideOnMobile"><a href="../">Home</a></li>
-                <li class="hideOnMobile"><a href="./videos.html?type=1">Videos</a></li>
-                <li class="hideOnMobile"><a href="./videos.html?type=2">Vlogs</a></li>
-                <li class="hideOnMobile"><a href="./contact.html">Bookings</a></li>
-                <li class="hideOnMobile"><a href="./about.html">About</a></li>
-                <li class="hideOnMobile"><a href="./login.html">Login</a></li>
+                <li class="hideOnMobile"><a href="../view/videos.html?type=1">Videos</a></li>
+                <li class="hideOnMobile"><a href="../view/videos.html?type=2">Vlogs</a></li>
+                <li class="hideOnMobile"><a href="../view/contact.html">Bookings</a></li>
+                <li class="hideOnMobile"><a href="../view/about.html">About</a></li>
                 <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
                             height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
                             <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
                         </svg></a></li>
+            </ul>
+
+            <!-- Tab -->
+            <ul class="tabScreen">
+                <a href="../"><img src="../asset/image/djg-logo-1.png" alt="DJGSONYYYYY" id="navbar-logo"></a>
+
+                <div>
+                    <li><a href="../">Home</a></li>
+                    <li><a href="../view/videos.html?type=1">Videos</a></li>
+                    <li><a href="../view/videos.html?type=2">Vlogs</a></li>
+                    <li><a href="../view/contact.html">Bookings</a></li>
+                    <li><a href="../view/about.html">About</a></li>
+                </div>
             </ul>
         </nav>
     </header>
@@ -121,8 +131,14 @@
 
         <!-- About Me Section 1 -->
         <section id="aboutMeSec1">
-            <img src="../asset/image/ganesh-1.jpg" alt="">
 
+            <!-- Left Side Video -->
+            <!-- <img src="../asset/image/ganesh-1.jpg" alt="Ganesh Sunariwal"> -->
+            <video src="../asset/video/djganesh_video_1.mp4" autoplay loop muted controls>
+                Your browser does not support the video tag.
+            </video>
+
+            <!-- Right side text -->
             <div id="aboutText1">
                 <p>Welcome to the rhythm of unforgettable experiences! I’m DJGanesh, a professional DJ with a
                     deep-rooted passion for music and a mission to create magical moments for every audience I perform
@@ -133,24 +149,25 @@
                     my ability to read the crowd, blend beats seamlessly, and keep the dance floor alive with an
                     electrifying atmosphere.</p>
 
+                <!-- Right Bottom Social Media -->
                 <div id="socialMediaDiv">
                     <!-- Facebook -->
-                    <span class="iconSpan">
+                    <span class="iconSpan" id="facebookIcon">
                         <i class="fa-brands fa-facebook"></i>
                     </span>
 
                     <!-- Instagram -->
-                    <span class="iconSpan">
+                    <span class="iconSpan" id="instagramIcon">
                         <i class="fa-brands fa-instagram"></i>
                     </span>
 
                     <!-- Youtube -->
-                    <span class="iconSpan">
+                    <span class="iconSpan" id="youtubeIcon">
                         <i class="fa-brands fa-youtube"></i>
                     </span>
 
                     <!-- WhatsApp -->
-                    <span class="iconSpan">
+                    <span class="iconSpan" id="whatsappIcon">
                         <i class="fa-brands fa-whatsapp"></i>
                     </span>
                 </div>
@@ -175,39 +192,52 @@
         <section id="myWorkSec">
             <h3>My Work</h3>
 
+            <!-- Left Wedding -->
             <div id="workCards">
                 <div class="workCard">
-                    <img src="../asset/image/wedding-party.jpg" alt="">
+
+                    <!-- Image -->
+                    <img src="../asset/image/wedding-party.jpg" alt="Wedding image">
+
+                    <!-- Title -->
                     <h2>Wedding Events</h2>
 
+                    <!-- Content -->
                     <div class="workCardText">
-                        <!-- Give me text for wedding -->
                         <p>Weddings are a celebration of love, and I’m here to make your special day even more
                             memorable. With a curated playlist that reflects your unique love story, I’ll create an
                             atmosphere of joy and romance that you and your guests will never forget.</p>
 
-                        <b><i>MAHALAXMI RACE COURCE MUMBAI, ICCI STADIUM MUMBAI, DAMAN, VAPI, RAJASTHAN, PUNE</i></b>
+                        <b><i>MAHALAXMI RACE COURCE MUMBAI, WANKHEDE STADIUM MUMBAI, DAMAN, VAPI, RAJASTHAN,
+                                PUNE</i></b>
                     </div>
                 </div>
 
+                <!-- Right Private -->
                 <div class="workCard">
-                    <img src="../asset/image/private-party.jpg" alt="">
+
+                    <!-- Image -->
+                    <img src="../asset/image/private-party.jpg" alt="Private Party image">
+
+                    <!-- Title -->
                     <h2>Personal Parties</h2>
 
+                    <!-- Content -->
                     <div class="workCardText">
-                        <!-- Give me text for private or personal or coorprate partoies -->
                         <p>Whether it’s a birthday, anniversary, or any other special occasion, I’ll bring the party to
                             life with a mix of your favorite tunes and the latest hits. From intimate gatherings to
                             large-scale celebrations, I’ll create a vibrant atmosphere that keeps the energy high and
                             the dance floor packed.</p>
 
-                        <b><i>LONAVALA, KARJAT, ICCI STADIUM MUMBAI, ODISHA, PUNE</i></b>
+                        <b><i>WANKHEDE STADIUM MUMBAI, LONAVALA, KARJAT, ODISHA, PUNE</i></b>
                     </div>
                 </div>
             </div>
 
-            <div id="collegeEventsDiv">
-                <img src="../asset/image/college-events.jpg" alt="">
+            <!-- College Events -->
+            <div class="collegeEventsDiv">
+                <img src="../asset/image/college-events.jpg" alt="College Events image" class="college-img2">
+                <img src="../asset/image/college.jpg" alt="College Events image" class="college-img">
 
                 <div>
                     <h2>College Events</h2>
@@ -216,6 +246,8 @@
                         all night long. With a mix of the latest tracks and classic hits, I’ll create an electrifying
                         atmosphere that students will love.</p>
 
+                    <b><i>MUMBAI UNIVERSITY, KALINA</i></b>
+                    <b><i>SNDT GIRLS COLLEGE, SANTACRUZ</i></b>
                     <b><i>K. J. SOMAIYA, VIDYAVIHAR, MUMBAI</i></b>
                     <b><i>K. J. SOMAIYA INSTITUTE OF TECHNOLOGY, SION</i></b>
                     <b><i>VES INSTITUTE OF TECHNOLOGY, CHEMBUR</i></b>
@@ -223,8 +255,30 @@
                     <b><i>VES COLLEGE OF ARTS, SCIENCE & COMMERCE, CHEMBUR</i></b>
                     <b><i>VES POLYTECHNIC, CHEMBUR</i></b>
                     <b><i>VES JUNIOR COLLEGE, KURLA</i></b>
-                    <b><i>SNDT COLLEGE, SANTACRUZ</i></b>
-                    <b><i>MUMBAI UNIVERSITY</i></b>
+                </div>
+            </div>
+
+            <!-- Top Work -->
+            <div class="collegeEventsDiv topWorkCard">
+                <img src="../asset/image/dj-controller.jpg" alt="DJ Controller image" class="college-img2">
+                <img src="../asset/image/club.jpg" alt="DJ Controller image" class="college-img">
+
+                <div>
+                    <h2>My Top Events</h2>
+                    <p>I’ve had the chance to perform at some amazing events—whether it’s a wedding, a fun party, or a
+                        huge festival. Each event has been special, and I love creating the right vibe and keeping
+                        everyone on their feet. I’m grateful for all the awesome memories I’ve helped make along the
+                        way!</p>
+
+                    <b><i>PHOENIX MARKET CITY MALL, KURLA</i></b>
+                    <b><i></i></b>
+                    <b><i></i></b>
+                    <b><i></i></b>
+                    <b><i></i></b>
+                    <b><i></i></b>
+                    <b><i></i></b>
+                    <b><i></i></b>
+                    <b><i></i></b>
                 </div>
             </div>
 
@@ -255,26 +309,24 @@
 
             <div id="workCards">
                 <div class="workCard edu">
-                    <!-- <img src="../asset/image/wedding-party.jpg" alt=""> -->
                     <h2>Education</h2>
 
                     <div class="workCardText">
-                        <p><b>M. Comm.</b> - K. J. Somaiya College of Science & Commerece, Somaiya University</p>
-                        <p><b>B. Comm.</b> - K. J. Somaiya College of Science & Commerece, Mumbai University</p>
-                        <p><b>HSC Commerece</b> - K. J. Somaiya College of Science & Commerece, MSBSHSE</p>
-                        <p><b>SSC</b> - Shantaram Krushnaji Pantwalawalkar High School, MSBSHSE</p>
+                        <p><b>M. Com.</b> - K. J. Somaiya College of Science & Commerece, Somaiya University</p>
+                        <p><b>B. Com.</b> - K. J. Somaiya College of Science & Commerece, Somaiya University</p>
+                        <p><b>HSC Com.</b> - K. J. Somaiya College of Science & Commerece, MSBSHSE</p>
+                        <p><b>SSC</b> - SK Pantwalawalkar Secondary High School, MSBSHSE</p>
                     </div>
                 </div>
 
                 <div class="workCard training">
-                    <!-- <img src="../asset/image/private-party.jpg" alt=""> -->
                     <h2>Training</h2>
 
                     <div class="workCardText">
                         <p><b>Diploma</b> - Music & Technology</p>
-                        <p><b>Disk Jockey</b> - Hide Club, CST</p>
-                        <p><b>Disk Jockey</b> - Bora Bora Club, Andheri</p>
+                        <p><b>Disk Jockey</b> - Bora Bora Club, Juhu</p>
                         <p><b>Disk Jockey</b> - Salud Club, Juhu</p>
+                        <p><b>Disk Jockey</b> - Hide Club, CST</p>
                     </div>
                 </div>
             </div>
@@ -284,13 +336,15 @@
     <!-- Footer -->
     <footer>
         <div id="part-1">
-            <div>
+            <!-- Book Now Section -->
+            <div id="bookNowDiv">
                 <h1>Book Me Now</h1>
                 <p>Ready to take your event to the next level? Book me now and let's make it a night to remember!
                 </p>
-                <button class="button-86" role="button" id="book-now-btn">Book Now</button>
+                <button class="button-85" role="button" id="book-now-btn">Book Now</button>
             </div>
 
+            <!-- Footer Links -->
             <div id="links-div">
                 <div class="links-child">
                     <a target="_blank" href="tel:9769794670">+91 97697 94670</a>
@@ -301,11 +355,11 @@
                 </div>
                 <div class="links-child">
                     <a href="../">Home</a>
-                    <a href="./videos.html?type=1">Videos</a>
-                    <a href="./videos.html?type=2">Vlogs</a>
-                    <a href="./contact.html">Bookings</a>
-                    <a href="./about.html">About</a>
-                    <a href="./login.html">Login</a>
+                    <a href="../view/videos.html?type=1">Videos</a>
+                    <a href="../view/videos.html?type=2">Vlogs</a>
+                    <a href="../view/contact.html">Bookings</a>
+                    <a href="../view/about.html">About</a>
+                    <a href="../view/login.html">Login</a>
                 </div>
                 <div class="links-child">
                     <a target="_blank" href="https://www.facebook.com/DJGSONYYYYY/">Facebook</a>
@@ -331,6 +385,8 @@
                 <h1 id="algodevs-h1">AlgoDevs</h1>
                 </p>
             </div>
+
+            <!-- Dev Info Links -->
             <div id="social-media">
                 <a target="_blank" href="https://www.linkedin.com/in/balotiyash/"><i
                         class="icon fab fa-linkedin"></i></a>

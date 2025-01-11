@@ -220,13 +220,13 @@
                     <!-- Main Contact Form -->
                     <form id="contactForm" name="submit-to-google-sheet">
                         <!-- Name -->
-                        <input type="text" name="Name" id="Name" placeholder="Name">
+                        <input type="text" name="Name" id="Name" placeholder="Name" required autocomplete="off">
 
                         <!-- Mobile No -->
-                        <input type="tel" name="Phone" id="Phone" placeholder="Mobile Number">
+                        <input type="tel" name="Phone" id="Phone" placeholder="Mobile Number" required autocomplete="off">
 
                         <!-- Message -->
-                        <textarea name="Message" id="msg" placeholder="Message"></textarea>
+                        <textarea name="Message" id="msg" placeholder="Message" required autocomplete="off"></textarea>
 
                         <!-- Submit -->
                         <button type="submit" class="button-86">Send Message</button>
@@ -254,13 +254,15 @@
     <!-- Footer -->
     <footer>
         <div id="part-1">
-            <div>
+            <!-- Book Now Section -->
+            <div id="bookNowDiv">
                 <h1>Book Me Now</h1>
                 <p>Ready to take your event to the next level? Book me now and let's make it a night to remember!
                 </p>
-                <button class="button-86" role="button" id="book-now-btn">Book Now</button>
+                <button class="button-85" role="button" id="book-now-btn">Book Now</button>
             </div>
 
+            <!-- Footer Links -->
             <div id="links-div">
                 <div class="links-child">
                     <a target="_blank" href="tel:9769794670">+91 97697 94670</a>
@@ -271,11 +273,11 @@
                 </div>
                 <div class="links-child">
                     <a href="../">Home</a>
-                    <a href="./videos.html?type=1">Videos</a>
-                    <a href="./videos.html?type=2">Vlogs</a>
-                    <a href="./contact.html">Bookings</a>
-                    <a href="./about.html">About</a>
-                    <a href="./login.html">Login</a>
+                    <a href="../view/videos.html?type=1">Videos</a>
+                    <a href="../view/videos.html?type=2">Vlogs</a>
+                    <a href="../view/contact.html">Bookings</a>
+                    <a href="../view/about.html">About</a>
+                    <a href="../view/login.html">Login</a>
                 </div>
                 <div class="links-child">
                     <a target="_blank" href="https://www.facebook.com/DJGSONYYYYY/">Facebook</a>
@@ -301,6 +303,8 @@
                 <h1 id="algodevs-h1">AlgoDevs</h1>
                 </p>
             </div>
+
+            <!-- Dev Info Links -->
             <div id="social-media">
                 <a target="_blank" href="https://www.linkedin.com/in/balotiyash/"><i
                         class="icon fab fa-linkedin"></i></a>
