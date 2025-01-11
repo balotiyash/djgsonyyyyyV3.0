@@ -3,7 +3,7 @@
     Author: Yash Balotiya
     Description: This file contains styling part of Home page - Section 1 & 2, Hero Intro and About Me.
     Created on: 30/12/2024
-    Last Modified: 01/01/2025
+    Last Modified: 11/01/2025
 */
 
 * {
@@ -45,8 +45,14 @@ main {
     width: 40vh;
 }
 
+/* For mobile */
+#dj-name-3 {
+    display: none;
+}
+
 /* Main Content */
-#main-content-div, #welcome-text-div {
+#main-content-div,
+#welcome-text-div {
     display: flex;
     flex-direction: column;
 }
@@ -63,17 +69,28 @@ main {
 }
 
 #ganesh-name-1 {
-	font-size: large;
-	color: #ff0150;
+    font-size: large;
+    color: #ff0150;
 }
 
-#dj-name-1, #dj-name-2, #ganesh-span {
+#dj-name-1,
+#dj-name-2,
+#ganesh-span {
     font-size: 6.5vw;
     font-weight: bolder;
 }
 
+#dj-name-1 {
+    width: 68%;
+}
+
 #dj-name-2 {
     margin-left: 20px;
+    height: 8vw;
+}
+
+.overlapping-element {
+    background: rgba(255, 255, 255, 0.5);
 }
 
 #ganesh-span {
@@ -102,26 +119,26 @@ main {
 }
 
 /* Professional Text Animation */
-#sec-2 > #professional-h1 {
-	animation: revealing;
-	animation-timeline: view(block);
-	animation-range: cover 0% cover 50%;
-	margin: 0px;
+#sec-2>#professional-h1 {
+    animation: revealing;
+    animation-timeline: view(block);
+    animation-range: cover 0% cover 50%;
+    margin: 0px;
 }
-  
-@keyframes revealing {
-	from {
-	  color: gray;
-	  margin-left: 100vw;
-	  filter: blur(50px);
-	  opacity: 0.5;
-	}
 
-	to {
-	  margin: 0px;
-	  filter: blur(0px);
-	  opacity: 1;
-	}
+@keyframes revealing {
+    from {
+        color: gray;
+        margin-left: 100vw;
+        filter: blur(50px);
+        opacity: 0.5;
+    }
+
+    to {
+        margin: 0px;
+        filter: blur(0px);
+        opacity: 1;
+    }
 }
 
 /* About Me Area */
@@ -138,7 +155,7 @@ main {
 
 /* Middle Text */
 #about-me-div {
-	display: flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin: 0 20px;
@@ -146,5 +163,6 @@ main {
 
 /* Right Image */
 #ganesh-1 {
-    width: 20vw;
+    /* width: 20vw; */
+    width: 30%;
 }

@@ -3,7 +3,7 @@
     Author: Yash Balotiya
     Description: This file contains all the HTML5 code of Home Page.
     Created on: 30/12/2024
-    Last Modified: 04/01/2025
+    Last Modified: 11/01/2025
 -->
 
 <!DOCTYPE html>
@@ -69,11 +69,13 @@
     <link rel="stylesheet" href="./style/shared/button-1.css">
     <link rel="stylesheet" href="./style/shared/button-2.css">
     <link rel="stylesheet" href="./style/shared/button-3.css">
+    <link rel="stylesheet" href="./style/shared/button-5.css">
 
     <!-- Main Styles -->
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./style/desktop/home-page-p1.css">
     <link rel="stylesheet" href="./style/desktop/home-page-p2.css">
+    <link rel="stylesheet" href="./style/responsive/home.css">
 </head>
 
 <body>
@@ -87,27 +89,39 @@
                             <path
                                 d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z" />
                         </svg> </a></li>
-                <li class="hideOnMobile"><a href="./">Home</a></li>
-                <li class="hideOnMobile"><a href="./view/videos.html?type=1">Videos</a></li>
-                <li class="hideOnMobile"><a href="./view/videos.html?type=2">Vlogs</a></li>
-                <li class="hideOnMobile"><a href="./view/contact.html">Bookings</a></li>
-                <li class="hideOnMobile"><a href="./view/about.html">About</a></li>
-                <!-- <li><a href="#">Login</a></li> -->
+                <li><a href="./">Home</a></li>
+                <li><a href="./view/videos.html?type=1">Videos</a></li>
+                <li><a href="./view/videos.html?type=2">Vlogs</a></li>
+                <li><a href="./view/contact.html">Bookings</a></li>
+                <li><a href="./view/about.html">About</a></li>
             </ul>
 
             <!-- Desktop -->
-            <ul>
-                <li><a href="./"><img src="./asset/image/djg-logo-1.png" alt="DJGSONYYYYY" id="navbar-logo"></a></li>
+            <ul class="navbar">
+                <li class="one"><a href="./"><img src="./asset/image/djg-logo-1.png" alt="DJGSONYYYYY"
+                            id="navbar-logo"></a></li>
                 <li class="hideOnMobile"><a href="./">Home</a></li>
                 <li class="hideOnMobile"><a href="./view/videos.html?type=1">Videos</a></li>
                 <li class="hideOnMobile"><a href="./view/videos.html?type=2">Vlogs</a></li>
                 <li class="hideOnMobile"><a href="./view/contact.html">Bookings</a></li>
                 <li class="hideOnMobile"><a href="./view/about.html">About</a></li>
-                <li class="hideOnMobile"><a href="./view/login.html">Login</a></li>
                 <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg"
                             height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
                             <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z" />
                         </svg></a></li>
+            </ul>
+
+            <!-- Tab -->
+            <ul class="tabScreen">
+                <a href="./"><img src="./asset/image/djg-logo-1.png" alt="DJGSONYYYYY" id="navbar-logo"></a>
+
+                <div>
+                    <li><a href="./">Home</a></li>
+                    <li><a href="./view/videos.html?type=1">Videos</a></li>
+                    <li><a href="./view/videos.html?type=2">Vlogs</a></li>
+                    <li><a href="./view/contact.html">Bookings</a></li>
+                    <li><a href="./view/about.html">About</a></li>
+                </div>
             </ul>
         </nav>
     </header>
@@ -116,19 +130,23 @@
     <main>
         <!-- Section 1: Intro -->
         <section id="sec-1" class="sec1">
+
             <!-- Hero Image Div -->
+            <h1 id="dj-name-3">DJGANESH</h1>
             <div id="hero-img-div">
                 <img src="./asset/image/dj-bg-1.jpg" alt="DJ Image" id="hero-img">
             </div>
 
             <!-- Main Content Div Overlapping Hero Image Div -->
             <div id="main-content-div">
+
                 <!-- DJGSONYYYYY name -->
                 <!-- <h1 id="dj-name-1">DJGSONYYYYY</h1> -->
-                <h1 id="dj-name-1"></h1>
+                <h1 id="dj-name-1" class="overlapping-element"></h1>
 
                 <!-- Welcome Div -->
                 <div id="welcome-div">
+
                     <!-- Welcome Text Div -->
                     <div id="welcome-text-div">
                         <p>Welcome to the world of music and entertainment! My name is <span
@@ -141,19 +159,22 @@
                     </div>
 
                     <!-- Ganesh Name -->
-                    <h1 id="dj-name-2">DJGAN<span id="ganesh-span">ESH</span></h1>
+                    <!-- <h1 id="dj-name-2">DJGAN<span id="ganesh-span">ESH</span></h1> -->
+                    <h1 id="dj-name-2" class="overlapping-element">DJGANESH</h1>
                 </div>
             </div>
         </section>
 
         <!-- Section 2: About Me -->
         <section id="sec-2">
+
             <!-- About Headers -->
             <h3 id="about-h3">About Me</h3>
             <h1 id="professional-h1">PROFESSIONAL DJ</h1>
 
             <!-- Main About Us Content -->
             <div id="about-content-div">
+                
                 <!-- Left Image -->
                 <img src="./asset/image/djg-logo-4.png" alt="DJGSONYYYYY LOGO" id="djg-logo-4">
 
@@ -186,6 +207,7 @@
 
             <!-- Services Div -->
             <div id="services-div">
+                
                 <!-- Weddings -->
                 <div class="event-card">
                     <img src="./asset/image/wedding.jpg" alt="Wedding Image">
@@ -218,8 +240,10 @@
 
             <!-- Testimonial Div -->
             <div id="testimonial-div">
+
                 <!-- Left Google Review -->
                 <div id="google-review-div">
+
                     <!-- Google Image -->
                     <img src="./asset/image/google.png" alt="Google">
 
@@ -242,12 +266,11 @@
                 </div>
 
                 <!-- Testimonial Div -->
-                <div>
+                <div id="testimonialCard">
                     <div class="testimonial">
                         <span class="open quote">“</span>
                         <div class="image">
                             <div class="clip"></div>
-                            <!-- <img src="https://placehold.co/100"> -->
                             <img src="./asset/image/djg-logo-4.png">
                         </div>
                         <p id="review-text"></p>
@@ -262,12 +285,14 @@
 
         <!-- Section 5: Vlogs & Videos -->
         <section id="sec-5">
+
             <!-- Headers -->
             <h2 class="vlog-header">VLOG</h2>
             <h2 class="vlog-header">& VIDEOS</h2>
 
             <!-- Main Section -->
             <div id="videos-div">
+
                 <!-- Left Frame -->
                 <iframe id="frame1" title="YouTube video player" frameborder="0"
                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -275,6 +300,7 @@
 
                 <!-- Right Frames -->
                 <div id="right-div">
+
                     <!-- Right Top -->
                     <div>
                         <iframe id="frame2" title="YouTube video player" frameborder="0"
@@ -304,13 +330,15 @@
     <!-- Footer -->
     <footer>
         <div id="part-1">
-            <div>
+            <!-- Book Now Section -->
+            <div id="bookNowDiv">
                 <h1>Book Me Now</h1>
                 <p>Ready to take your event to the next level? Book me now and let's make it a night to remember!
                 </p>
-                <button class="button-86" role="button" id="book-now-btn">Book Now</button>
+                <button class="button-85" role="button" id="book-now-btn">Book Now</button>
             </div>
 
+            <!-- Footer Links -->
             <div id="links-div">
                 <div class="links-child">
                     <a target="_blank" href="tel:9769794670">+91 97697 94670</a>
@@ -351,6 +379,8 @@
                 <h1 id="algodevs-h1">AlgoDevs</h1>
                 </p>
             </div>
+
+            <!-- Dev Info Links -->
             <div id="social-media">
                 <a target="_blank" href="https://www.linkedin.com/in/balotiyash/"><i
                         class="icon fab fa-linkedin"></i></a>

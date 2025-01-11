@@ -1,0 +1,249 @@
+/*
+    File: style/responsive/home.css
+    Author: Neha Balotia, Yash Balotiya
+    Description: This file contains all CSS code for the home page responsiveness.
+    Created on: 11/01/2024
+    Last Modified: 11/01/2024
+*/
+
+/* Section 1 hero image */
+/* For mobile screen */
+@media (max-width: 650px) {
+    #hero-img-div {
+        justify-content: center;
+    }
+
+    #main-content-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        top: 0;
+    }
+
+    #welcome-text-div {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .overlapping-element {
+        display: none;
+    }
+
+    #dj-name-3 {
+        display: block;
+        font-size: 8vw;
+        font-weight: bold;
+    }
+
+    #sec-1 {
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 800px) {
+    #sec-1 {
+        width: 90%;
+        /* padding-top: 10%; */
+        text-align: center;
+    }
+
+    #dj-name-1 {
+        width: 50vw;
+    }
+}
+
+/* Section 2 About Me */
+/* For mobile screen */
+@media (max-width: 800px) {
+    #sec-2 {
+        align-items: center;
+        padding: 20px;
+        width: 90%;
+    }
+
+    #about-content-div {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    #about-me-div {
+        margin: 0;
+        align-items: center;
+    }
+
+    #ganesh-1 {
+        margin: 12px 0;
+        width: 80%;
+    }
+
+    #djg-logo-4 {
+        display: none;
+    }
+}
+
+/* For Tab Screen */
+@media (min-width: 800px) and (max-width: 1000px) {
+    #djg-logo-4 {
+        display: none;
+        width: 40vw;
+    }
+
+    #sec-2 {
+        width: 90vw;
+    }
+
+    #about-me-div {
+        margin-left: 0;
+    }
+
+    #ganesh-1 {
+        width: 40%;
+    }
+}
+
+/* For small laptop screen */
+@media (min-width: 1000px) and (max-width: 1280px) {
+    #djg-logo-4 {
+        width: 50vw;
+    }
+
+    #sec-2 {
+        width: 90vw;
+    }
+}
+
+/* Section 3: My Services */
+/* Mobile */
+@media (max-width: 800px) {
+    #sec-3 {
+        width: 90%;
+        margin-top: 100px;
+    }
+
+    #services-div {
+        flex-wrap: wrap;
+    }
+
+    .event-card img {
+        width: 40vw;
+    }
+
+    .event-card h1 {
+        font-size: 4vw;
+        margin-bottom: 50px;
+    }
+}
+
+/* Tab */
+@media (min-width: 800px) and (max-width: 1100px) {
+    #sec-3 {
+        width: 90%;
+    }
+
+    .event-card img {
+        width: 20vw;
+    }
+}
+
+/* Section 4 testimonial */
+/* small laptop */
+@media (min-width: 1050px) and (max-width: 1250px) {
+    #sec-4 {
+        width: 90%;
+    }
+}
+
+/* tab */
+@media (min-width: 800px) and (max-width: 1050px) {
+    #sec-4 {
+        width: 90%;
+    }
+
+    #google-review-div,
+    #testimonialCard {
+        width: 40vw;
+    }
+}
+
+/* Mobile screen */
+@media (max-width: 600px) {
+    #google-review-div img {
+        width: 75%;
+    }
+
+    .testimonial {
+        width: 100%;
+    }
+}
+
+@media (max-width: 800px) {
+    #testimonial-div {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    #sec-4 {
+        width: 90%;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 50px;
+    }
+
+    #google-review-div {
+        margin-bottom: 100px;
+    }
+}
+
+/* Section 5 vlogs */
+/* tab */
+@media (min-width: 800px) and (max-width: 1000px) {
+    #sec-5 {
+        width: 90%;
+    }
+
+    #frame1 {
+        width: 43.5vw;
+    }
+}
+
+/* mobile */
+@media (max-width: 800px) {
+    #sec-5 {
+        width: 90%;
+    }
+
+    #videos-div {
+        flex-direction: column;
+    }
+
+    #frame1,
+    #right-div {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+    #frame1 {
+        height: 75vw;
+    }
+
+    #right-div {
+        justify-content: space-between;
+    }
+
+    #right-div div {
+        width: 49.5%;
+        height: 500px;
+    }
+
+    #right-div div iframe {
+        width: 100%;
+        height: 49%;
+    }
+
+    .vlog-header {
+        font-size: 6vw;
+    }
+}

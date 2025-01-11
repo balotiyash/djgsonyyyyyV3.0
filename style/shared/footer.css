@@ -3,7 +3,7 @@
     Author: Yash Balotiya
     Description: This file contains styling part of Footer.
     Created on: 30/12/2024
-    Last Modified: 04/01/2025
+    Last Modified: 11/01/2025
 */
 
 /* Footer Section */
@@ -70,7 +70,7 @@ footer h1 {
 #dev-info {
 	display: flex;
 	justify-content: space-between;
-    align-items: center;
+	align-items: end;
 }
 
 #dev-info h1 {
@@ -78,27 +78,104 @@ footer h1 {
 }
 
 #designed-by p {
-    color: lightgray;
+	color: lightgray;
 }
 
 #social-media a {
-    color: white;
-}    
+	color: white;
+}
 
 #social-media {
-    width: 10%;
-    display: flex;
-    justify-content: space-between;
+	width: 10%;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 12px;
 }
 
 .icon {
-    font-size: 20px;
+	font-size: 20px;
 }
 
-footer a, footer i {
-    transition: 0.2s ease-in-out all;
+footer a,
+footer i {
+	transition: 0.2s ease-in-out all;
 }
 
-footer a:hover, footer i:hover {
-    color: #ff004f;
+footer a:hover,
+footer i:hover {
+	color: #ff004f;
+}
+
+/* Responsiveness */
+/* For small laptop screen */
+@media (max-width: 1000px) {
+	footer {
+		padding: 50px 20px 0 20px;
+		margin-top: 50px;
+	}
+
+	#part-1 {
+		flex-direction: column;
+	}
+
+	#links-div {
+		width: 100%;
+		margin-top: 50px;
+	}
+
+	#social-media {
+		width: 20%;
+	}
+
+	#footer-img {
+		width: 60%;
+	}
+
+	#designed-by {
+		margin-top: 20px;
+	}
+
+	#designed-by h1 {
+		font-size: 4.5vw;
+	}
+
+	#designed-by p {
+		font-size: 2vw;
+	}
+
+	#divider {
+		margin: 20px 0;
+	}
+}
+
+/* For tablet screen */
+@media (min-width: 800px) and (max-width: 1200px) {
+	#social-media {
+		width: 15%;
+	}
+}
+
+/* For mobile screen */
+@media (max-width: 550px) {
+	#social-media {
+		width: 30%;
+	}
+}
+
+@media (max-width: 500px) {
+	#social-media {
+		width: 40%;
+	}
+
+	.links-child a {
+		font-size: 2.7vw;
+	}
+
+	#designed-by h1 {
+		font-size: 6vw;
+	}
+
+	#designed-by p {
+		font-size: 3vw;
+	}
 }

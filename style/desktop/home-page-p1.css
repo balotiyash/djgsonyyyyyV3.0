@@ -3,7 +3,7 @@
     Author: Yash Balotiya
     Description: This file contains styling part of Home page - Section 3 & 5, My Services & Vlogs.
     Created on: 30/12/2024
-    Last Modified: 01/01/2025
+    Last Modified: 11/01/2025
 */
 
 /* Section 3: My Services */
@@ -58,6 +58,7 @@
 
 /* Event Card Text */
 .event-card h1 {
+    font-size: 2.5vw;
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.5s ease-out, transform 0.5s ease-out;
@@ -86,44 +87,38 @@
 }
 
 /* Section 5: Vlogs & Videos */
+/* Heading */
 .vlog-header {
-	font-size: 3vw;
-	font-weight: bold;
+    font-size: 3vw;
+    font-weight: bold;
 }
 
+/* Main Videos Div */
 #videos-div {
-	height: 75vh;
-	display: flex;
-	justify-content: space-between;
-	margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
 }
 
-/* .right-div {
-	height: 100%;
-	width: 50%;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-} */
-
-/* .right-div div {
-	height: 200%;
-	display: flex;
-	justify-content: space-between;
-} */
-
+/* Big Frame */
 #frame1 {
-	width: 47%;
-	/* height: 150%; */
+    width: 37vw;
+    height: 37vw;
 }
 
-.iframe-2 {
-	height: 37vh;
+/* Other Frames Div */
+#right-div {
+    width: 50%;
+    display: flex;
 }
 
-#child-12 {
-	/* display: flex; */
-	/* flex-direction: column; */
-	/* justify-content: space-between; */
-	/* align-items: center; */
+#right-div div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#right-div iframe {
+    width: 96%;
+    height: 49%;
+    margin: 0;
 }

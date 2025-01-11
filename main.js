@@ -3,7 +3,7 @@
  * Author: Yash Balotiya
  * Description: This file contains the main JavaScript code for the Home Page.
  * Created on: 31/12/2024
- * Last Modified: 04/01/2025
+ * Last Modified: 11/01/2025
 */
 
 // My Services Section Animation
@@ -16,7 +16,7 @@ const observer = new IntersectionObserver((entries, observer) => {
         }
     });
 }, {
-    threshold: 0.3 // Trigger when 20% of the section is visible
+    threshold: 0 // Trigger when 20% of the section is visible
 });
 
 // Observe the main section
@@ -130,4 +130,7 @@ window.onload = async function () {
     // Calling the functions to fetch Vlogs and Google Reviews
     fetchVlogsVideos();
     fetchGoogleReviews();
+
+    // Fetch Google Reviews every 5 seconds
+    setInterval(fetchGoogleReviews, 5000);
 }
