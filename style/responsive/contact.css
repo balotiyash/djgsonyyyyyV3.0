@@ -1,0 +1,34 @@
+/*
+    File: style/responsive/contact.css
+    Author: Yash Balotiya
+    Description: This file contains all CSS code for the contact page responsiveness.
+    Created on: 11/01/2024
+    Last Modified: 11/01/2024
+*/
+
+/* For tab */
+@media (max-width: 850px) {
+    #mainContactSection {
+        width: 100vw;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #leftContact {
+        width: 400px;
+        margin-bottom: 50px;
+    }
+
+    #rightContact {
+        width: 400px;
+    }
+}
+
+/* For mobile */
+@media (max-width: 450px) {
+
+    .contactCard,
+    #rightContact {
+        width: 90vw;
+    }
+}

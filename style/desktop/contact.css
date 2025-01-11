@@ -3,7 +3,7 @@
     Author: Yash Balotiya
     Description: This file contains styling part of Contact Us page.
     Created on: 06/01/2025
-    Last Modified: 06/01/2025
+    Last Modified: 11/01/2025
 */
 
 * {
@@ -58,14 +58,16 @@ main {
 
 /* Main Contact Section */
 #mainContactSection {
-    width: 50%;
+    /* width: 50%; */
+    width: 800px;
     display: flex;
     justify-content: space-between;
     margin: 50px 0 0 0;
 }
 
 /* Left Side */
-#leftContact, #rightContact {
+#leftContact,
+#rightContact {
     width: 45%;
     display: flex;
     flex-direction: column;
@@ -104,6 +106,7 @@ main {
     align-items: center;
     justify-content: center;
     margin-right: 20px;
+    cursor: pointer;
 }
 
 .contactCard span i {
@@ -128,6 +131,26 @@ main {
     color: black;
 }
 
+.iconSpan:nth-child(1) {
+    background-color: #3b5998;
+}
+
+.iconSpan:nth-child(2) {
+    background-color: #E1306C;
+}
+
+.iconSpan:nth-child(3) {
+    background-color: #ff0000;
+}
+
+.iconSpan:nth-child(4) {
+    background-color: #25d366;
+}
+
+.iconSpan .fa-brands {
+    font-size: 24px;
+}
+
 /* Right Side Form */
 #rightContact {
     width: 50%;
@@ -147,7 +170,8 @@ main {
     justify-content: space-between;
 }
 
-#contactForm input, #contactForm textarea {
+#contactForm input,
+#contactForm textarea {
     width: 100%;
     padding: 10px;
     margin: 10px 0;
