@@ -3,7 +3,7 @@
  * Author: Yash Balotiya
  * Description: This file contains Logical Part to handle contact us page.
  * Created on: 11/01/2025
- * Last Modified: 11/01/2025
+ * Last Modified: 12/01/2025
 */
 
 // Setting the isLoggedIn to false by default
@@ -16,6 +16,19 @@ const msg = document.getElementById("msg");
 
 form.addEventListener('submit', e => {
     e.preventDefault()
+
+    const phone = document.getElementById("phone").value;
+
+    // Checking the phone number is valid or not using regex
+    if (!/^[6-9]\d{9}$/.test(phone)) {
+        // msg.innerHTML = "Please Enter a Valid Phone Number!!"
+        // setTimeout(function () {
+        //     msg.innerHTML = ""
+        // }, 5000)
+        alert("Please Enter a Valid Phone Number!!")
+        return
+    }
+
     fetch(scriptURL, { method: 'POST', body: new FormData(form) })
         .then(response => {
             msg.innerHTML = "Message Sent Successfully!!"
@@ -24,7 +37,14 @@ form.addEventListener('submit', e => {
             }, 5000)
             form.reset()
         })
-        .catch(error => console.error('Error!', error.message))
+        // .catch(error => console.error('Error!', error.message))
+        .catch(error => {
+            msg.innerHTML = "Something Went Wrong!!"
+            setTimeout(function () {
+                msg.innerHTML = ""
+            }, 5000)
+            console.error('Error!', error.message)
+        })
 })
 
 // Function to handle the Facebook

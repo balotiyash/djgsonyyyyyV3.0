@@ -3,7 +3,7 @@
     Author: Yash Balotiya
     Description: This file contains stylling part of Quotation Management Page
     Created on: 27/12/2024
-    Last Modified: 03/01/2025
+    Last Modified: 12/01/2025
 */
 
 * {
@@ -31,7 +31,8 @@ table {
     border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
     border: 1px solid black;
     text-align: center;
 }
@@ -70,7 +71,8 @@ th, td {
     border: 2px solid black;
 }
 
-.no-border, .no-border td {
+.no-border,
+.no-border td {
     border: none;
     text-align: right;
 }
@@ -104,8 +106,8 @@ input {
 
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 #sign-img {

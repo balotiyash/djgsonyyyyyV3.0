@@ -3,7 +3,7 @@
     Author: Yash Balotiya
     Description: This file contains all the HTML5 code of the Login Page.
     Created on: 01/01/2025
-    Last Modified: 03/01/2025
+    Last Modified: 12/01/2025
 -->
 
 <!DOCTYPE html>
@@ -80,10 +80,17 @@
 
             if (username === uname && password === pass) {
                 window.localStorage.setItem('isLoggedIn', "true");
-                window.location.href = './quotation-manager.html';
+                // window.location.href = './quotation-manager.html';
+                window.location.href = './quotation-manager-sheets.html';
             } else {
                 alert('Invalid Username or Password');
             }
+        }
+
+        // Handling Logout
+        const isLogged = localStorage.getItem('isLoggedIn');
+        if (isLogged == "false") {
+            window.location.href = '../';
         }
     </script>
 </body>

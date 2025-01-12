@@ -3,7 +3,7 @@
  * Author: Yash Balotiya
  * Description: This file contains the Logical Part of Videos & Vlogs Page.
  * Created on: 03/01/2025
- * Last Modified: 11/01/2025
+ * Last Modified: 12/01/2025
 */
 
 // ANIMATION1
@@ -54,10 +54,10 @@ function loadVideos() {
 
     // Set video source and title based on the 'type' parameter
     if (type === "1") {
-        videoSource = "../asset/video/DJ.mp4";
+        videoSource = "../asset/video/DJ_compressed.mp4";
         title = "Videos";
     } else if (type === "2") {
-        videoSource = "../asset/video/Party.mp4";
+        videoSource = "../asset/video/Party_compressed.mp4"; 
         title = "Vlogs";
     }
 
@@ -129,7 +129,7 @@ function displayVideos() {
 loadMoreButton.addEventListener('click', function () {
     currentPage++; // Increment the page number
     loadVideos();  // Load the next page of videos
-    document.getElementById('other-iframe-container').scrollIntoView(); // Scroll to the top of the video section
+    document.getElementById('large-iframe-container').scrollIntoView(); // Scroll to the top of the video section
 });
 
 // Initial load

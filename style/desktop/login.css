@@ -1,3 +1,11 @@
+/*
+    File: style/desktop/login.css
+    Author: Yash Balotiya
+    Description: This file contains styling part of Login Page.
+    Created on: 22/12/2023
+    Last Modified: 12/01/2025
+*/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 * {
@@ -133,8 +141,8 @@ body {
     transition: 0.5s;
 }
 
-.box form .inputBox input:valid ~ span,
-.box form .inputBox input:focus ~ span {
+.box form .inputBox input:valid~span,
+.box form .inputBox input:focus~span {
     /* color: #fff; */
     font-size: 0.75em;
     transform: translateY(-34px);
@@ -153,8 +161,8 @@ body {
     pointer-events: none;
 }
 
-.box form .inputBox input:valid ~ i,
-.box form .inputBox input:focus ~ i {
+.box form .inputBox input:valid~i,
+.box form .inputBox input:focus~i {
     height: 44px;
 }
 
