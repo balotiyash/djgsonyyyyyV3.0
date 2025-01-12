@@ -31,7 +31,7 @@ console.log('Developed by AlgoDevs - Yash Balotiya');
 console.log('https://balotiyash.github.io/Personal-Portfolio/');
 
 // Prevent Right Click
-// document.addEventListener('contextmenu', event => event.preventDefault());
+document.addEventListener('contextmenu', event => event.preventDefault());
 
 // Prevent F12
 document.onkeypress = function (event) {
