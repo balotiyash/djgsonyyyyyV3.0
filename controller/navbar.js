@@ -17,9 +17,9 @@ function hideSidebar() {
 }
 
 // Function to open AlgoDevs Profile in footer
-document.getElementById('algodevs-h1').addEventListener('click', () => {
-    window.open('https://balotiyash.github.io/Personal-Portfolio/', '_blank');
-});
+//document.getElementById('algodevs-h1').addEventListener('click', () => {
+    //window.open('https://balotiyash.github.io/Personal-Portfolio/', '_blank');
+//});
 
 // Function to handle Book Now Button in footer
 document.getElementById('book-now-btn').addEventListener('click', () => {
