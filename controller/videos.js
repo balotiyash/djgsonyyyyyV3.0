@@ -3,7 +3,7 @@
  * Author: Yash Balotiya
  * Description: This file contains the Logical Part of Videos & Vlogs Page.
  * Created on: 03/01/2025
- * Last Modified: 12/01/2025
+ * Last Modified: 14/01/2025
 */
 
 // ANIMATION1
@@ -54,7 +54,7 @@ function loadVideos() {
 
     // Set video source and title based on the 'type' parameter
     if (type === "1") {
-        videoSource = "../asset/video/DJ_compressed.mp4";
+        videoSource = "../asset/video/DJ_compressed_5MB - Trim.mp4";
         title = "Videos";
     } else if (type === "2") {
         videoSource = "../asset/video/Party_compressed.mp4"; 

@@ -3,7 +3,7 @@
  * Author: Yash Balotiya
  * Description: This file contains Logical Part to handle contact us page.
  * Created on: 11/01/2025
- * Last Modified: 12/01/2025
+ * Last Modified: 14/01/2025
 */
 
 // Setting the isLoggedIn to false by default
@@ -29,22 +29,26 @@ form.addEventListener('submit', e => {
         return
     }
 
-    fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+    fetch(scriptURL, {
+        method: 'POST',
+        body: new FormData(form),
+        mode: 'no-cors' // Disable CORS for the request
+    })
         .then(response => {
-            msg.innerHTML = "Message Sent Successfully!!"
+            // You won't be able to handle the response directly in 'no-cors' mode
+            msg.innerHTML = "Message Sent Successfully!!";
             setTimeout(function () {
-                msg.innerHTML = ""
-            }, 5000)
-            form.reset()
+                msg.innerHTML = "";
+            }, 5000);
+            form.reset();
         })
-        // .catch(error => console.error('Error!', error.message))
         .catch(error => {
-            msg.innerHTML = "Something Went Wrong!!"
+            msg.innerHTML = "Something Went Wrong!!";
             setTimeout(function () {
-                msg.innerHTML = ""
-            }, 5000)
-            console.error('Error!', error.message)
-        })
+                msg.innerHTML = "";
+            }, 5000);
+            console.error('Error!', error.message);
+        });
 })
 
 // Function to handle the Facebook
@@ -66,3 +70,17 @@ document.getElementById("youtubeIcon").addEventListener("click", function () {
 document.getElementById("whatsappIcon").addEventListener("click", function () {
     window.open("https://wa.me/919769794670", "_blank");
 });
+
+// CORS
+// function doPost(e) {
+//     // Add CORS headers
+//     var response = HtmlService.createHtmlOutput();
+//     response.append("<p>Your Google Apps Script is working!</p>");
+//     return ContentService.createTextOutput('Success').setMimeType(ContentService.MimeType.TEXT).setHeaders({
+//         "Access-Control-Allow-Origin": "*", // This allows all origins
+//         "Access-Control-Allow-Methods": "POST, GET, OPTIONS",
+//         "Access-Control-Allow-Headers": "Content-Type"
+//     });
+
+//     // Your existing form submission handling code here
+// }
