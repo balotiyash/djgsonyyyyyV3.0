@@ -3,7 +3,7 @@
  * Author: Yash Balotiya
  * Description: This file contains the Logical Part of Videos & Vlogs Page.
  * Created on: 03/01/2025
- * Last Modified: 14/01/2025
+ * Last Modified: 24/01/2025
 */
 
 // ANIMATION1
@@ -57,7 +57,7 @@ function loadVideos() {
         videoSource = "../asset/video/DJ_compressed_5MB - Trim.mp4";
         title = "Videos";
     } else if (type === "2") {
-        videoSource = "../asset/video/Party_compressed.mp4"; 
+        videoSource = "../asset/video/Party_compressed.mp4";
         title = "Vlogs";
     }
 
@@ -71,17 +71,49 @@ function loadVideos() {
     document.getElementById('myVideo').load();
 
     // Fetch the video/Vlogs URLs from the JSON file
-    fetch(`../server/${title.toLowerCase()}.json`)
-        .then(response => response.json())
-        .then(data => {
-            videoUrls = data.urls; // Store all video URLs in the array
-            displayVideos(); // Call to display the videos after data is fetched
-        })
-        .catch(error => {
-            console.error('Error fetching videos:', error);
-            document.getElementById('not-found-sec').style.display = 'flex'; // Show not found if error occurs
-        });
+    // fetch(`../server/${title.toLowerCase()}.json`)
+    //     .then(response => response.json())
+    //     .then(data => {
+    //         videoUrls = data.urls; // Store all video URLs in the array
+    //         displayVideos(); // Call to display the videos after data is fetched
+    //     })
+    //     .catch(error => {
+    //         console.error('Error fetching videos:', error);
+    //         document.getElementById('not-found-sec').style.display = 'flex'; // Show not found if error occurs
+    //     });
 
+    let videos = null;
+
+    if (type === "1") {
+        videos = {
+            "urls": [
+                "https://www.youtube.com/embed/3EUcmOz4Tzs",
+                "https://www.youtube.com/embed/YhnWtQnyIPU",
+                "https://www.youtube.com/embed/W6XxGoozDa0",
+                "https://www.youtube.com/embed/HL0SA3hGoRM",
+                "https://www.youtube.com/embed/LD0pwvzzqU4",
+                "https://www.youtube.com/embed/CL-bVptF75Y",
+                "https://www.youtube.com/embed/egaJYvhmzoo?si=BSTwum_WIu9MHcyK",
+                "https://www.youtube.com/embed/3Mv1Y9jiXjo?si=x6W3zeUa1nLeSW2J",
+                "https://www.youtube.com/embed/YHlEDOBz-88?si=FNn6XiubcPaNl7HY",
+                "https://www.youtube.com/embed/kqnTuuR-r48?si=Ebj8tCDemnr_pqDq"
+            ]
+        };
+    } else if (type === "2") {
+        videos = {
+            "urls": [
+
+            ]
+        };
+    }
+
+    if (videos !== null) {
+        videoUrls = videos.urls; // Store all video URLs in the array
+        displayVideos(); // Call to display the videos after data is fetched
+    } else {
+        console.error('Error fetching videos:', error);
+        document.getElementById('not-found-sec').style.display = 'flex'; // Show not found if error occurs
+    }
 }
 
 // Function to display videos (called after data is fetched)
