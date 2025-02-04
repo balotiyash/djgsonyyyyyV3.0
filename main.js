@@ -3,7 +3,7 @@
  * Author: Yash Balotiya
  * Description: This file contains the main JavaScript code for the Home Page.
  * Created on: 31/12/2024
- * Last Modified: 24/01/2025
+ * Last Modified: 02/02/2025
 */
 
 // My Services Section Animation
@@ -65,6 +65,8 @@ async function fetchVlogsVideos() {
 
         const data1 = {
             "urls": [
+                "https://www.youtube.com/embed/aHshlgR1RoQ",
+                "https://www.youtube.com/embed/-hxVmmUPHQw",
                 "https://www.youtube.com/embed/3EUcmOz4Tzs",
                 "https://www.youtube.com/embed/YhnWtQnyIPU",
                 "https://www.youtube.com/embed/W6XxGoozDa0",
@@ -80,7 +82,7 @@ async function fetchVlogsVideos() {
 
         const data2 = {
             "urls": [
-        
+                "https://www.youtube.com/embed/UKMujf9KXXo?si=7_KaDxe1wFb00kij"
             ]
         };
 

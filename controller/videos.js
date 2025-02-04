@@ -3,7 +3,7 @@
  * Author: Yash Balotiya
  * Description: This file contains the Logical Part of Videos & Vlogs Page.
  * Created on: 03/01/2025
- * Last Modified: 27/01/2025
+ * Last Modified: 02/02/2025
 */
 
 // ANIMATION1
@@ -87,6 +87,8 @@ function loadVideos() {
     if (type === "1") {
         videos = {
             "urls": [
+                "https://www.youtube.com/embed/aHshlgR1RoQ",
+                "https://www.youtube.com/embed/-hxVmmUPHQw",
                 "https://www.youtube.com/embed/3EUcmOz4Tzs",
                 "https://www.youtube.com/embed/YhnWtQnyIPU",
                 "https://www.youtube.com/embed/W6XxGoozDa0",
