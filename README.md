@@ -1,6 +1,6 @@
 # DJGSONYYYYY v3.0 Website
 
-Welcome to the official website of **DJGSONYYYYY**, owned and managed by **DJGANESH**. This website was developed by **Yash Balotiya** (freelancer under the name **AlgoDevs**), with a focus on creating a dynamic, modern, and responsive UI using **HTML**, **CSS**, and **JavaScript**. The website is fully responsive and designed to provide an excellent user experience across all devices.
+Welcome to the official website of **DJGSONYYYYY**, owned and managed by **DJGANESH**. This website was developed by **AlgoDevs**, with a focus on creating a dynamic, modern, and responsive UI using **HTML**, **CSS**, and **JavaScript**. The website is fully responsive and designed to provide an excellent user experience across all devices.
 
 ## Project Overview
 
@@ -42,10 +42,8 @@ This website showcases **DJGANESH's** DJ services and events. It contains multip
 
 ## Developer Information
 
-**Developer**: Yash Balotiya  
-**Freelancer**: AlgoDevs  
-**Email**: balotiyash@gmail.com  
-**Portfolio**: [AlgoDevs - Yash Balotiya](https://balotiyash.github.io/Personal-Portfolio/)  
+**Developer**: AlgoDevs
+**Portfolio**: [AlgoDevs](https://balotiyash.github.io/Personal-Portfolio/)  
 
 ## Project Screenshots
 
@@ -65,4 +63,4 @@ Here are placeholders for the screenshots of the pages:
 
 ---
 
-For any issues or feature requests, feel free to reach out to me at [balotiyash@gmail.com].
+For any issues or feature requests, feel free to reach out to me at [AlgoDevs](https://balotiyash.github.io/Personal-Portfolio/).
