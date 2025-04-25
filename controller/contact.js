@@ -3,7 +3,7 @@
  * Author: Yash Balotiya
  * Description: This file contains Logical Part to handle contact us page.
  * Created on: 11/01/2025
- * Last Modified: 14/01/2025
+ * Last Modified: 25/04/2025
 */
 
 // Setting the isLoggedIn to false by default
@@ -25,30 +25,39 @@ form.addEventListener('submit', e => {
         // setTimeout(function () {
         //     msg.innerHTML = ""
         // }, 5000)
-        alert("Please Enter a Valid Phone Number!!")
-        return
+        alert("Please Enter a Valid Phone Number!!");
+        return;
     }
 
-    fetch(scriptURL, {
-        method: 'POST',
-        body: new FormData(form),
-        mode: 'no-cors' // Disable CORS for the request
-    })
-        .then(response => {
-            // You won't be able to handle the response directly in 'no-cors' mode
-            msg.innerHTML = "Message Sent Successfully!!";
-            setTimeout(function () {
-                msg.innerHTML = "";
-            }, 5000);
-            form.reset();
-        })
-        .catch(error => {
-            msg.innerHTML = "Something Went Wrong!!";
-            setTimeout(function () {
-                msg.innerHTML = "";
-            }, 5000);
-            console.error('Error!', error.message);
-        });
+    const subject = "Hello Ganesh, I am interested in your services!";
+    const body = `Hello Ganesh, I am interested in your services!\n\nName: ${form.Name.value}\nPhone: ${phone}\n\nMessage: ${msg.value}`;
+
+    // Construct the mailto link
+    const mailtoLink = `mailto:ganeshsony94@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+
+    // Open the default mail client with the constructed link
+    window.location.href = mailtoLink;
+
+    // fetch(scriptURL, {
+    //     method: 'POST',
+    //     body: new FormData(form),
+    //     mode: 'no-cors' // Disable CORS for the request
+    // })
+    //     .then(response => {
+    //         // You won't be able to handle the response directly in 'no-cors' mode
+    //         msg.innerHTML = "Message Sent Successfully!!";
+    //         setTimeout(function () {
+    //             msg.innerHTML = "";
+    //         }, 5000);
+    //         form.reset();
+    //     })
+    //     .catch(error => {
+    //         msg.innerHTML = "Something Went Wrong!!";
+    //         setTimeout(function () {
+    //             msg.innerHTML = "";
+    //         }, 5000);
+    //         console.error('Error!', error.message);
+    //     });
 })
 
 // Function to handle the Facebook
